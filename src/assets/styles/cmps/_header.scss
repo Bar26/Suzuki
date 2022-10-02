@@ -1,0 +1,41 @@
+.header-container {
+    height: 80px;
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+
+
+    &:hover {
+        background-color: white;
+        button {
+            color: black;
+        }
+    }
+
+    button {
+        height: 100%;
+        font-size: rem(20px);
+        width: 120px;
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+        .main-logo {
+            height: 85px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            @include flex-center;
+            margin-top: -2.5px;
+            cursor: pointer;
+        }
+
+    .main-nav {
+    }
+}

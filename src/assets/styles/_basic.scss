@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+
+    height: 100vh;
+    margin: 0;
+    
+}
+
+
+button {
+    background-color: transparent;
+    margin:0;
+    padding:0;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
