@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+    font-family: "almoni";
+    color: $clr-txt;
+
+
 }
 
 
@@ -7,9 +11,19 @@ body {
 
     height: 100vh;
     margin: 0;
+    color: $clr-txt;
     
 }
 
+.App{
+    height: 100%;
+
+}
+
+.main{
+    position: relative;
+    top:131px;
+}
 
 button {
     background-color: transparent;

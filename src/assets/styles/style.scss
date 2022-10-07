@@ -1,9 +1,13 @@
+@import './set-up/variables';
+@import './set-up/typography';
 @import './basic';
 @import './set-up/functions';
 @import './set-up/mixins';
 
 //cpms
 @import './cmps/header';
+@import './cmps/car-safety-details';
+@import './cmps/footer';
 
 //pages
 @import './pages/home'
