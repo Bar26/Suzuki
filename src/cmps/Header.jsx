@@ -1,18 +1,32 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import suzukiLogo from '../assets/img/suzuki-logo.png'
+import { useDispatch, useSelector } from 'react-redux'
+import { loadCars } from '../store/CarActions'
+
 
 
 
 export function Header() {
+
+    const dispatch = useDispatch()
+	// const { curCar } = useSelector((state) => state.carModule)
+	const { cars } = useSelector((state) => state.carModule)
+
+
+    useEffect(() => {
+        dispatch(loadCars())
+        console.log(cars);
+    }, [])
 
 
 
     return (
         <header className="header-container">
             <div className="top-header">
-                <img className="main-logo" src={suzukiLogo} alt="suzuki-logo"/>
+                <img className="main-logo" src={suzukiLogo} alt="suzuki-logo" />
                 <h1 className="title">סוזוקי עפולה</h1>
-                <label className="main-search-label">חיפוש 
+                <label className="main-search-label">חיפוש
                     <input className="main-search" type="text" />
                 </label>
             </div>

@@ -1,6 +1,9 @@
 .home {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    // gap:45px;
     .img-container {
         position: relative;
         display: flex;
@@ -16,15 +19,17 @@
             opacity: 0.5;
             // position: relative;
             z-index: -10;
-            max-height: 600px;
+            max-height: 450px;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            transition: background-image 0.5s ease-in-out;
+
         }
         .inner-img {
             width: 95%;
             z-index: -5;
-            max-height: 550px;
+            max-height: 400px;
             position: absolute;
             background-position: center center;
             background-repeat: no-repeat;
@@ -41,9 +46,7 @@
                 display: flex;
                 gap: 15px;
                 > * {
-                    padding-inline: 6px;
-                    padding-top: 3px;
-                    padding-bottom: 3px;
+                    padding:3px 6px;
                     width: 240px;
                     height: 50px;
                     font-size: rem(30px);
@@ -52,34 +55,45 @@
                 .more-info {
                     background-color: rgba(255, 255, 255, 0);
                     border: 1px white solid;
-                    color: white;
+                    color: #ffffff;
                 }
 
                 .contact-us {
-                    background-color: white;
+                    // background-color: white;
+                    background-color: $clr-background;
                 }
             }
 
-            .arrow-right {
-                position: absolute;
-                font-size: 50px;
-                right: 10px;
-                top: 50%;
-                transform: translateY(-50%);
+       
+        }
+
+        .arrow-right {
+            position: absolute;
+            font-size: rem(50px);
+            right: 2.5%;
+            top: 50%;
+            cursor: pointer;
+            transform: translateY(-50%);
+          
+          >*{
+            >*{
+                color:$clr-background;
+            }
+          }
+           
+        }
+
+        .arrow-left {
+            position: absolute;
+            font-size: rem(50px);
+            left: 2.5%;
+            top: 50%;
+            transform: translateY(-50%);
+            >*{
                 >*{
-                    color:white;
+                    color:$clr-background;
                 }
-                    
-                
-            }
-
-            .arrow-left {
-                position: absolute;
-                font-size: 70px;
-                left: 37.5px;
-                top: 50%;
-                transform: translateY(-50%);
-            }
+              }
         }
 
         .toggle-play {

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { CarSafetyDetails } from "../cmps/CarSafetyDetails"
+import { CarList } from "../cmps/CarList"
+import { ContactUs } from "../cmps/ContactUs"
 
 export function Home() {
 
@@ -37,25 +39,14 @@ export function Home() {
         }
     ]
     useEffect(() => {
-
-        // intervalId.current = setInterval(() => {
-        //     setImgNum((imgNum) => imgNum + 1)
-        // }, 15000)
-
         play()
 
         return () => {
-            // clearInterval(intervalId.current)
             stopPlay()
         }
     }, [])
 
-    useEffect(() => {
-        if (imgNum === (imgs.length) - 1) setImgNum(0)
-    }, [imgNum])
-
     const OnTogglePlay = () => {
-        console.log(intervalId.current)
         if (intervalId.current) stopPlay()
         else play()
 
@@ -63,7 +54,10 @@ export function Home() {
 
     const play = () => {
         intervalId.current = setInterval(() => {
-            setImgNum((imgNum) => imgNum + 1)
+            setImgNum((imgNum) => {
+                if (imgNum === imgs.length - 1) return 0
+                else return imgNum + 1
+            })
         }, 5000)
     }
 
@@ -73,7 +67,12 @@ export function Home() {
     }
 
     const onChangeImg = (diff) => {
-        setImgNum((imgNum) => imgNum + diff)
+        setImgNum((imgNum) => {
+            if (imgNum === imgs.length-1 && diff) return 0
+            else if (imgNum === 0 && !diff) return imgs.length - 1
+            else return imgNum + diff
+        })
+       
         stopPlay()
         play()
     }
@@ -84,11 +83,11 @@ export function Home() {
 
 
     return <section className="home">
-        {/* <section className="rotating-images-container"> */}
         <div className="img-container">
             {/* <img className="background-img" src={imgs[imgNum]} />
                 <img className="inner-img" src={imgs[imgNum]} /> */}
-            <div className="background-img" style={{ backgroundImage: `URL(https://res.cloudinary.com/debmbjvbh/image/upload/v1664745148/suzuki/Cross/s_cross_2_z6etlo.jpg) `, aspectRatio: "1920 / 1080" }}>
+            {/* <div className="background-img" style={{ backgroundImage: `URL(https://res.cloudinary.com/debmbjvbh/image/upload/v1664745148/suzuki/Cross/s_cross_2_z6etlo.jpg) `, aspectRatio: "1920 / 1080" }}> */}
+            <div className="background-img" style={{ backgroundImage: `URL(${imgs[imgNum].img}) `, aspectRatio: imgs[imgNum].a_r }}>
 
             </div>
             <div className="inner-img" style={{ backgroundImage: `URL(${imgs[imgNum].img}) `, aspectRatio: imgs[imgNum].a_r }}>
@@ -97,14 +96,15 @@ export function Home() {
                     <button className="contact-us">תחזרו אליי</button>
                 </div>
                 <CarSafetyDetails />
-                <span className="arrow-right" onClick={() => onChangeImg(1)}><i class="fa-solid fa-angle-right"></i></span>
-                <span className="arrow-left" onClick={() => onChangeImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
-
             </div>
-
+            <span className="arrow-right" onClick={() => onChangeImg(1)}><i class="fa-solid fa-angle-right"></i></span>
+            <span className="arrow-left" onClick={() => onChangeImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
             <button className="toggle-play" onClick={OnTogglePlay}>עצור ניגון</button>
         </div>
 
-        {/* </section> */}
+        <CarList />
+        <ContactUs />
+
+
     </section>
 }

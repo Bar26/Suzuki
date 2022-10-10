@@ -1,0 +1,20 @@
+.car-preview{
+    width: 270px;
+    @include flex-center;
+    flex-direction: column;
+    gap:25px;
+    cursor: pointer;
+
+    .car-img{
+        width: 100%;
+        object-fit: cover;
+        transition: .2s ease-in-out ;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    .car-name{
+        font-size: rem(24px);
+    }
+}

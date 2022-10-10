@@ -1,6 +1,7 @@
 [
     {
       "name":"סוזוקי סוויפט היברידית",
+      "_id":"c1",
       "nameEN":"Suzuki Swift Hybrid",
       "title":"הסופר מיני האהובה בעיצוב מטריף",
       "text":"!הסוויפט החדשה עכשיו היברידית! עם מערכת היברידית חכמה, מערכת בטיחות מקורית ומתקדמת, מרכז מידע צבעוני, העברת הילוכים ספורטיבית מההגה, עיצוב ייחודי ושלל צבעים חדשים, הסוויפט החדשה עכשיו חסכונית יותר, מאובזרת יותר, ובטיחותית הרבה יותר",
@@ -18,7 +19,8 @@
         "secondaryImgs":["https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift3_dectpd.webp",
         "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift4_fze9hn.webp",
         "https://res.cloudinary.com/debmbjvbh/image/upload/v1663866747/suzuki/swift/swift18_t1j7sh.jpg"],
-        "allImgs":""
+        "allImgs":"",
+        "floatImg":"https://res.cloudinary.com/debmbjvbh/image/upload/v1665185693/suzuki/floating%20imgs/swiftfloat3_w2n0k5.png"
       },
       "infoImgs":[
           {

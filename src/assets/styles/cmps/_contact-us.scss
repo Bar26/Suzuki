@@ -1,0 +1,82 @@
+.contact-us-container{
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    .contact-us-header{
+        margin:30px 0 20px;
+        @include flex-center;
+        flex-direction: column;
+        gap:20px;
+        .contact-us-title{
+            font-size: rem(28px);
+
+        }
+        .call-now{
+            font-size: rem(24px);
+        }
+
+    }
+    .contact-us-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 2fr;
+        gap:10px;
+        width: 580px;
+
+        ::placeholder{
+            font-size: rem(18px);
+        }
+  
+        .model, .message{
+            grid-column: 1/-1;
+            font-size: rem(18px);
+        }
+
+        input, .model{
+            height: 50px;
+         
+        }
+
+        .model{
+            color:#757575;
+            >*{
+            color:#757575;
+
+            }
+
+        }
+
+        input, .model, .message{
+            border: 0;
+            border-radius: 3px;
+            box-shadow: inset 0 0 0 2px #dfe1e6;
+            padding: 8px 12px;
+
+            &:focus {
+                outline: none;
+                box-shadow: inset 0 0 0 2px $clr-suzuki-blue;
+            }
+        }
+
+      
+        
+     
+
+        .btn-submit{
+            padding:3px 6px;
+            width: 250px;
+            height: 40px;
+            font-size: rem(22px);
+            background-color: $clr-suzuki-blue;
+            color:white;
+            @include flex-center;
+            grid-column: 1/-1;
+            justify-self: center;
+            margin-top: 10px;
+
+
+        }
+    }
+
+}
+

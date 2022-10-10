@@ -1,11 +1,11 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter, HashRouter as Router, Route, Routes } from 'react-router-dom'
 import { Header } from './cmps/Header'
 import { Home } from './pages/Home'
 
 function App() {
 
 	return (
-		<Router>
+		<HashRouter>
 
 			<div className="App">
 				<Header />
@@ -18,7 +18,7 @@ function App() {
 				</main>
 			</div>
 
-		</Router>
+		</HashRouter>
 	)
 }
 
