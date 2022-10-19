@@ -63,16 +63,17 @@
      
 
         .btn-submit{
-            padding:3px 6px;
+            // padding:3px 6px;
             width: 250px;
             height: 40px;
             font-size: rem(22px);
-            background-color: $clr-suzuki-blue;
-            color:white;
+            // background-color: $clr-suzuki-blue;
+            // color:white;
             @include flex-center;
             grid-column: 1/-1;
             justify-self: center;
             margin-top: 10px;
+            margin-bottom: 100px;
 
 
         }

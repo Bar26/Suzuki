@@ -30,8 +30,8 @@ export function ContactUs() {
                 {cars.map(car => <option value={car.name}>{car.name}</option>)}
             </select>
             <textarea className="message" placeholder="תרצו להוסיף הודעה?" />
-            <button className="btn-submit">
-                שלח ונחזור אליך בהקדם
+            <button className="btn btn-submit">
+                שלחו ונחזור אליך בהקדם
             </button>
 
         </form>
