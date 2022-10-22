@@ -1,0 +1,19 @@
+.mini-cards-container{
+    width: 100%;
+    // display: grid;
+    // grid-template-columns: 400px 400px;
+    // grid-template-rows: 1fr 1fr;
+    // gap:30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    display: flex;
+    justify-content: center;
+
+   
+
+
+    .mini-card-container{
+        @include mini-card;
+    }
+}

@@ -4,12 +4,50 @@
 	align-items: center;
 }
 
+@mixin big-card {
+	text-align: center;
+	width: 100%;
+	.title {
+		font-size: rem(40px);
+		font-weight: bold;
+		margin-bottom: em(20px,40px);
+	}
+	.content {
+		font-size: rem(24px);
+		margin-bottom: em(25px,24px);
+	}
+	.card-img {
+		width: 100%;
+		max-height: 450px;
+		object-fit: cover;
+	}
+}
+
+@mixin mini-card {
+	text-align: center;
+	width: calc(50% - 15px);
+
+	.title {
+		font-size: rem(24px);
+		font-weight: bold;
+	}
+	.content {
+		font-size: rem(18px);
+	}
+	.mini-img {
+		object-fit: cover;
+		width: 100%;
+		aspect-ratio: 555 / 370;
+		
+	}
+	
+}
+
 @mixin for-laptop-layout {
 	@media (max-width: 1200px) {
 		@content;
 	}
 }
-
 
 @mixin for-tablet-layout {
 	@media (max-width: 767px) {
@@ -17,12 +55,8 @@
 	}
 }
 
-
 @mixin for-mobile-layout {
 	@media (max-width: 480px) {
 		@content;
 	}
 }
-
-
-

@@ -3,6 +3,8 @@ import { Header } from './cmps/Header'
 import { Home } from './pages/Home'
 import { Footer } from './cmps/Footer'
 import { CarListPage } from './pages/CarListPage'
+import { CarDetails } from './pages/CarDetails'
+import { PurchaseProcess } from './pages/PurchaseProcess'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
 
 						<Route path="/" element={<Home />} />
 						<Route path="/cars" element={<CarListPage />} />
+						<Route path="/cars/:carId" element={<CarDetails />} />
+						<Route path="/purchase-process" element={<PurchaseProcess />} />
 
 					</Routes>
 				</main>

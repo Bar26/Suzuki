@@ -6,8 +6,6 @@ export const carService = {
 }
 
 function query(){
-    console.log('in service');
-    console.log(cars);
     return cars
 }
 

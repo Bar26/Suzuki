@@ -1,0 +1,30 @@
+.big-cards-container {
+    width: 100%;
+    display: flex;
+    .big-card-container {
+        @include big-card;
+
+        .bigPlusSmall {
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            .big-img {
+                @include big-card;
+            }
+            .small-imgs-container {
+                width: 100%;
+                display: flex;
+                gap: 15px;
+                >*{
+                    max-height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .small-img {
+            width: calc(50% - 7.5px);
+            object-fit: cover;
+        }
+    }
+}

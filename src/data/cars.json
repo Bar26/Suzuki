@@ -1,87 +1,127 @@
 [
     {
-      "name":"סוזוקי סוויפט היברידית",
-      "_id":"c1",
-      "nameEN":"Suzuki Swift Hybrid",
-      "title":"הסופר מיני האהובה בעיצוב מטריף",
-      "text":"!הסוויפט החדשה עכשיו היברידית! עם מערכת היברידית חכמה, מערכת בטיחות מקורית ומתקדמת, מרכז מידע צבעוני, העברת הילוכים ספורטיבית מההגה, עיצוב ייחודי ושלל צבעים חדשים, הסוויפט החדשה עכשיו חסכונית יותר, מאובזרת יותר, ובטיחותית הרבה יותר",
-      "price": "112,990",
-      "licensing": "1,246",
-      "pollution":"3",
-      "safety":"6",
-      "isHybrid":"true",
-      "colors":[["#1b1b1b","#014478"],["#a4a4a6","#edcd00"],
-      ["#141416","#de4813"],["#141416","#c6171e"],
-      ["#191919","#191919"],["#8b8b8d","#8b8b8d"],
-      ["#fefefe","#fefefe"],["#4a4a4c","#4a4a4c"],
-      ["#c9151e","#c9151e"],["#00467a","#00467a"]],
-      "imgs":{
-        "mainImg":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663861772/suzuki/swift/swiftMain1_mboiut.jpg",
-        "secondaryImgs":["https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift3_dectpd.webp",
-        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift4_fze9hn.webp",
-        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663866747/suzuki/swift/swift18_t1j7sh.jpg"],
-        "allImgs":"",
-        "floatImg":"https://res.cloudinary.com/debmbjvbh/image/upload/v1665185693/suzuki/floating%20imgs/swiftfloat3_w2n0k5.png"
-      },
-      "infoImgs":[
-          {
-              "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift6_cbewv8.webp",
-              "text":{
-                  "title":"ההיברידית החדשה",
-                  "preview":"מערכת היברידית קומפקטית עם סוללת ליתיון המוסיפה כח למנוע",
-                  "content":"המערכת ההיברידית SHVS משפרת את החיסכון בדלק באמצעות מנוע קטן (ISG) המספק כח נוסף למנוע הבנזין. המנוע החשמלי מוזן מסוללת ליתיום 10 אמפר\/ בעלת ביצועי טעינה\/פריקה מעולים. זוהי מערכת היברידית מיטבית ומאוזנת למכוניות קומפקטיות."
-              }
-          },
-          {
-              "img":"https://res.cloudinary.com/debmbjvbh/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1663864224/suzuki/swift/swiftForDesign_thujpd.jpg",
-              "text":{
-                  "title":"מעוצבת, ספורטיבית ומהנה לנהיגה",
-                  "content":" נוכחות חזקה. כל פרט תורם למראה הייחודי. זוהי מכונית שמושכת תשומת לב, עם עיצוב ספורטיבי הכולל נגיעות חכמות של כרום וסגסוגת אלומיניום. לסוויפט מראה שרירי המעניק לה "
-                  
-              }
-          },
-        {
-            "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663865429/suzuki/swift/swiftForSafety_nyobiw.jpg",
-            "text":{
-                "title":"מערכות בטיחות מתקדמות",
-                "preview":"מערכת זיהוי מתקדמת המבוססת על שילוב בין מצלמה, חיישן לייזר ומכ'ם. (סטנדרט בגימור GLX)",
-                "content":"מערכת הבטיחות בחזית הרכב מבוססת על שילוב בין מצלמה וחיישן לייזר המובנים בתוך השמשה הקדמית. המצלמה מצטיינת בזיהוי למרחק בינוני עד ארוך וגם בזיהוי הולכי רגל. חיישן הלייזר מצטיין בטווח הקצר ובשעות הלילה ומאפשר הפעלת מערכת בלימה אוטומטית  למניעת התנגשות או לצמצום עוצמת הפגיעה, התרעה ותירון סטייה מנתיב, שליטה אוטומטית על אורות גבוהים והתרעה על 'שיוט' בתוך הנתיב."
-             
-            }
+        "name": "סוזוקי סוויפט היברידית",
+        "_id": "c1",
+        "nameEN": "Suzuki Swift Hybrid",
+        "title": "הסופר מיני האהובה בעיצוב מטריף",
+        "text": "!הסוויפט החדשה עכשיו היברידית! עם מערכת היברידית חכמה, מערכת בטיחות מקורית ומתקדמת, מרכז מידע צבעוני, העברת הילוכים ספורטיבית מההגה, עיצוב ייחודי ושלל צבעים חדשים, הסוויפט החדשה עכשיו חסכונית יותר, מאובזרת יותר, ובטיחותית הרבה יותר",
+        "price": "112,990",
+        "licensing": "1,246",
+        "pollution": "3",
+        "safety": "6",
+        "isHybrid": "true",
+        "techLinkName":"swiftTech",
+        "catalogLinkName":"swiftCatalog",
+        "colors": [
+            [
+                "#1b1b1b",
+                "#014478"
+            ],
+            [
+                "#a4a4a6",
+                "#edcd00"
+            ],
+            [
+                "#141416",
+                "#de4813"
+            ],
+            [
+                "#141416",
+                "#c6171e"
+            ],
+            [
+                "#191919",
+                "#191919"
+            ],
+            [
+                "#8b8b8d",
+                "#8b8b8d"
+            ],
+            [
+                "#fefefe",
+                "#fefefe"
+            ],
+            [
+                "#4a4a4c",
+                "#4a4a4c"
+            ],
+            [
+                "#c9151e",
+                "#c9151e"
+            ],
+            [
+                "#00467a",
+                "#00467a"
+            ]
+        ],
+        "imgs": {
+            "mainImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666211458/suzuki/swift/swift_hybrid_banner_s86txl.jpg",
+            "floatImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185693/suzuki/floating%20imgs/swiftfloat3_w2n0k5.png"
         },
-        {
-            "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663849098/suzuki/swift/swift7_isoijh.webp",
-            "text":{
-                "title":"חסכונית במיוחד",
-                "preview":"מנוע DUALJET 2.1 ליטר, חדש וחסכוני במיוחד.",
-                "content":"מנוע 1.2 DUALJET (K12D) כולל צילינדר להשגת יעילות תרמית גבוההץ למנוע מאפיינים מתקדמים נוספים שמסייעים לחסוך בדלק, לרבות יחס דחיסה של 13.0, מערכת תזמון שסתומים משתנה (VVT) שמתאימה את פעולת היניקה והפליטה החל מסל'ד נמוך, משאבת שמן עם קיבולת משתנה השומרת על לחץ שמן נמוך גם במנוע קר, ומתזי קירור לבוכנה לשמירה על טמפ' נמוכות ולמניעת נקישות."
-            }
-        },
-        {
-            "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663849100/suzuki/swift/swift9_t1az1q.webp",
-            "text":{
-                "title":"מערכת בקרת אקלים",
-                "content":"כשתפעלים את בקרת האקלים בזמן נהיגה, הדבר החארון שרוצים הוא תפעול מסובך המחייב להסיט מבט מהכביס לזמן ממושך. בקרת האקלים מאפשרת הפעלה קלה,, מבלי להסתבך הבוררים האוטומטיים אינטואיטיביים, עם תצוגת LCD ברורה."
-        
-            }
-        },
-        {
-            "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663849098/suzuki/swift/swift10_jtf4py.webp",
-            "text":{
-                "title":"תחושה של מרחב פתוח",
-                "preview":"תא נוסעים ותא מטען שנותנים לכם מרחב",
-                "content":"הסוויפט החדשה כוללת תא מטען מרווח המאפשר לכם לקחת יותר. ניתן לקפל את המושב האחורי המפוצל להגדלת נפח תא המטען תקרת הרכב הגבוהה נותנת מרחב נוסף לנוסעים. תא הנוסעים מצויד במגוון תאי אחסון נוחים ונגישים."
-              
-            }
-        },
-        {
-            "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1663849100/suzuki/swift/swift11_r9rztj.webp",
-            "text":{
-                "title":"חלל פנימי",
-                "content":"לסוויפט החדשה עיצוב פנים מוקפד ואלגנטי. האבזור בה שודרג וכעת ניתן להינות מצג נתונים צבעוני בגודל 4.2 אינץ', שעונים מעוגלים, קונסולה מרכזית מתקדמת והגה בסגנון ספורטיבי."
-            }
+        "infoImgs": {
+            "main": {
+                "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666367568/suzuki/swift/bluSwift_g7t9zq.png",
+                "text": {
+                    "title": "ההיברידית החדשה",
+                    "content": "הסוויפט החדשה עכשיו היברידית! עם מערכת היברידית חכמה, מערכת בטיחות מקורית ומתקדמת, מרכז מידע צבעוני, העברת הילוכים ספורטיבית מההגה, עיצוב ייחודי ושלל צבעים חדשים, הסוויפט החדשה עכשיו חסכונית יותר, מאובזרת יותר, ובטיחותית הרבה יותר."
+                }
+            },
+            "bigCards": [
+                {
+                    "imgs": [
+                        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865429/suzuki/swift/swiftForSafety_nyobiw.jpg",
+                        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift4_fze9hn.webp ",
+                        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849099/suzuki/swift/swift8_lxwxbo.webp"
+                    ],
+                    "text": {
+                        "title": "מעוצבת, ספורטיבית ומהנה לנהיגה",
+                        "content": "מכונית שמושכת תשומת לב, עם עיצוב ספורטיבי הכולל נגיעות חכמות של כרום וסגסוגת אלומיניום. כל פרט תורם למראה הייחודי. לסוויפט מראה שרירי המעניק לה נוכחות חזקה. "
+                    }
+                }
+            ],
+            "miniCards": [
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849098/suzuki/swift/swift7_isoijh.webp",
+                    "text": {
+                        "title": "חסכונית במיוחד",
+                        "content": "מערכת היברידית קומפקטית עם סוללת ליתיום המוסיפיה כח למנוע ומשפרת חיסכון בדלק, מנוע DUALJET 2.1 ליטר, חדש וחסכוני במיוחד."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849100/suzuki/swift/swift9_t1az1q.webp",
+                    "text": {
+                        "title": "מערכת בקרת אקלים",
+                        "content": "כשתפעלים את בקרת האקלים בזמן נהיגה, הדבר החארון שרוצים הוא תפעול מסובך המחייב להסיט מבט מהכביס לזמן ממושך. בקרת האקלים מאפשרת הפעלה קלה,, מבלי להסתבך הבוררים האוטומטיים אינטואיטיביים, עם תצוגת LCD ברורה."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849098/suzuki/swift/swift10_jtf4py.webp",
+                    "text": {
+                        "title": "תחושה של מרחב פתוח",
+                        "content": "הסוויפט החדשה כוללת תא מטען מרווח המאפשר לכם לקחת יותר. ניתן לקפל את המושב האחורי המפוצל להגדלת נפח תא המטען תקרת הרכב הגבוהה נותנת מרחב נוסף לנוסעים. תא הנוסעים מצויד במגוון תאי אחסון נוחים ונגישים."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849100/suzuki/swift/swift11_r9rztj.webp",
+                    "text": {
+                        "title": "חלל פנימי",
+                        "content": "לסוויפט החדשה עיצוב פנים מוקפד ואלגנטי. האבזור בה שודרג וכעת ניתן להינות מצג נתונים צבעוני בגודל 4.2 אינץ', שעונים מעוגלים, קונסולה מרכזית מתקדמת והגה בסגנון ספורטיבי."
+                    }
+                }
+            ],
+            "safety": {
+                "imgs": [
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865232/suzuki/swift/1-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA_ahxliv.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865231/suzuki/swift/2-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA_ftgkui.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865230/suzuki/swift/3-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA_gykolm.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865230/suzuki/swift/4-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA_thy4q6.jpg"
+                ],
+                "text": {
+                    "title": "מערכות בטיחות מתקדמות",
+                    "content": "הסוויפט החדשה מצוידת במערכת בטיחות מקורית ומתקדמת, משולבת מצלמה ורדאר וכוללת בלימה אוטונומית, התראה אקטיבית בעת סטייה מנתיב, זיהוי שטח מת, התראת תנועה חוצה מאחור והתראה על עייפות נהג."
+                }
+            },
+            "interior": []
         }
-      ]
     }
-    
-  ]
+]

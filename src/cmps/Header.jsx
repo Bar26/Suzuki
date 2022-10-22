@@ -15,29 +15,31 @@ export function Header() {
     const headerRef = useRef()
     const topHeaderRef = useRef()
     const hrRef = useRef()
-    const hrRef2 = useRef()
+    // const hrRef2 = useRef()
 
 
     useEffect(() => {
         dispatch(loadCars())
         window.addEventListener('scroll', (ev) => {
             if (window.pageYOffset > 200) onScroll()
-            if(window.pageYOffset===0) onNoScroll()
+            if (window.pageYOffset === 0) onNoScroll()
         })
     }, [])
 
-    const onScroll=()=>{
-        navRef.current.classList.add('hide')
-        topHeaderRef.current.style.boxShadow='0 -0.5px 4px 0px #a9aaaf'
-        hrRef.current.classList.add('hide')
+    const onScroll = () => {
+        if (navRef.current) {
+            navRef.current.classList.add('hide')
+            topHeaderRef.current.style.boxShadow = '0 -0.5px 4px 0px #a9aaaf'
+            hrRef.current.classList.add('hide')
+        }
         // hrRef2.current.classList.add('hide')
     }
 
-    const onNoScroll=()=>{
-        navRef.current.classList.remove('hide')
+    const onNoScroll = () => {
+        navRef.current?.classList.remove('hide')
         hrRef.current.classList.remove('hide')
         // hrRef2.current.classList.remove('hide')
-        topHeaderRef.current.style.boxShadow='none'
+        topHeaderRef.current.style.boxShadow = 'none'
     }
 
     // useLayoutEffect(() => {
@@ -62,7 +64,7 @@ export function Header() {
             <hr ref={hrRef} />
             <nav className="main-nav" ref={navRef} >
                 <Link to="/cars"><button>דגמים</button></Link>
-                <button>תהליך רכישה</button>
+                <Link to="/purchase-process"><button>תהליך רכישה</button></Link>
                 <button>גלריה</button>
                 <button className="contact-us">צור קשר</button>
             </nav>
