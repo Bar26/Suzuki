@@ -60,7 +60,7 @@
         }
 
         .phone-us {
-            background-color: #f6f3f2;
+            background-color: $clr-background;
             width: 200px;
             align-self: center;
             margin-inline-end: 5px;
@@ -141,5 +141,9 @@
             box-shadow:0px 0px 2px 1px #dfe1e6;
             width: 80%;
         }
+    }
+
+    .pollution-img{
+        width: 100%;
     }
 }

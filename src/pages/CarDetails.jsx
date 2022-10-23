@@ -16,11 +16,11 @@ export function CarDetails() {
     const safetyRefs = useRef([])
     let currImgIdx = 0
 
-    const techLinks={
-        "swiftTech":swiftTech  //////////////// NOT COMPLETE 
+    const techLinks = {
+        "swiftTech": swiftTech  //////////////// NOT COMPLETE 
     }
-    const catalogLinks={
-        "swiftCatalog":swiftCatalog  //////////////// NOT COMPLETE 
+    const catalogLinks = {
+        "swiftCatalog": swiftCatalog  //////////////// NOT COMPLETE 
     }
 
     useEffect(() => {
@@ -41,11 +41,11 @@ export function CarDetails() {
             safetyRefs.current.push(el)
     }
 
-    const getLink=(linkName, isTech)=>{
-        if(isTech) return techLinks[linkName]
+    const getLink = (linkName, isTech) => {
+        if (isTech) return techLinks[linkName]
         else return catalogLinks[linkName]
     }
-    
+
 
 
 
@@ -95,8 +95,8 @@ export function CarDetails() {
             <hr />
 
             <div className="links-container">
-                <a href= { getLink(currCar.techLinkName,true)} target="_blank"  >מפרט טכני</a>
-                <a href={getLink(currCar.catalogLinkName,false)} target="_blank" >קטלוג</a>
+                <a href={getLink(currCar.techLinkName, true)} target="_blank"  >מפרט טכני</a>
+                <a href={getLink(currCar.catalogLinkName, false)} target="_blank" >קטלוג</a>
             </div>
 
 
@@ -126,10 +126,11 @@ export function CarDetails() {
             <hr />
 
 
-            <video controls src="https://res.cloudinary.com/debmbjvbh/video/upload/v1666376298/suzuki/swift/10_-_Meet_the_New_Hybrid_Suzuki_Swift_yhvceu.mp4" />
+            <video autoPlay muted preload="auto" loop="loop" src="https://res.cloudinary.com/debmbjvbh/video/upload/v1666376298/suzuki/swift/10_-_Meet_the_New_Hybrid_Suzuki_Swift_yhvceu.mp4" />
             <hr />
         </section>
 
+        <img className="pollution-img" src={currCar.pollutionImg} />
         <ContactUs />
 
 

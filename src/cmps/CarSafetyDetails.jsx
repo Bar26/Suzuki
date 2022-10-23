@@ -60,10 +60,7 @@ export function CarSafetyDetails(safety, pollution) {
                 <span className="safety-title">רמת בטיחות</span>
                 <span className="safety-info" style={{ backgroundColor: getSafetyColor(3) }}>{3}</span>
             </div>
-            <div className="more-info-container">
-                <span>לפרטים</span>
-                <a className="more-info" href="suzuki.co.il">suzuki.co.il</a>
-            </div>
+     
         </section>
     )
 

@@ -5,9 +5,9 @@ import { CarPreview } from "../cmps/CarPreview"
 export function CarListPage() {
     const { cars } = useSelector((state) => state.carModule)
 
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 
     return <section className="car-list-container">
@@ -27,6 +27,11 @@ export function CarListPage() {
             <div className="car-preview-wrapper"><CarPreview car={{ nameEN: "suzuki Ignis Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185689/suzuki/floating%20imgs/ignisfloat2_aogymb.png" } }} /> </div>
             <div className="car-preview-wrapper"> <CarPreview car={{ nameEN: "suzuki Jimny Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185679/suzuki/floating%20imgs/jimnyfloat2_frqwib.png" } }} /> </div>
         </section>
+
+
+        <video autoPlay muted preload="auto" loop="loop" src="https://res.cloudinary.com/debmbjvbh/video/upload/v1666451755/suzuki/cars-video_e2xrhp.mp4" />
+
+
 
 
     </section>

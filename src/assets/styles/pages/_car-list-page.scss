@@ -20,6 +20,7 @@
         display: grid;
         grid-template-rows: repeat(auto-fit, 1fr);
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 50px;
 
         :nth-child(odd) {
             .car-preview {
@@ -30,7 +31,7 @@
         :last-child {                            /////////////change if another model comes!!!!!!!!
             grid-column: 1/-1;
             justify-self: center;
-            border-bottom: none !important;
+            // border-bottom: none !important;
             .car-preview {
                 border: none;
             }
@@ -48,5 +49,9 @@
         .car-name {
             font-size: rem(34px);
         }
+    }
+
+    video{
+        width: 70%;
     }
 }
