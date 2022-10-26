@@ -1,8 +1,9 @@
-import { useEffect, useLayoutEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import suzukiLogo from '../assets/img/suzuki-logo.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadCars } from '../store/CarActions'
+import { carService } from '../services/carService'
 
 
 
@@ -24,6 +25,7 @@ export function Header() {
             if (window.pageYOffset > 200) onScroll()
             if (window.pageYOffset === 0) onNoScroll()
         })
+        
     }, [])
 
     const onScroll = () => {
@@ -66,7 +68,7 @@ export function Header() {
                 <Link to="/cars"><button>דגמים</button></Link>
                 <Link to="/purchase-process"><button>תהליך רכישה</button></Link>
                 <button>גלריה</button>
-                <button className="contact-us">צור קשר</button>
+                <Link to="/contact-us"><button className="contact-us">צור קשר</button></Link>
             </nav>
             {/* <hr ref={hrRef2} /> */}
 

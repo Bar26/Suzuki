@@ -1,12 +1,14 @@
-import { createRef, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { json, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { setCurrCar } from '../store/CarActions'
 import { BigCards } from "../cmps/BigCards";
 import { MiniCards } from "../cmps/MiniCards";
 import { ContactUs } from "../cmps/ContactUs"
 import swiftTech from '../assets/files/swiftTech.pdf'
 import swiftCatalog from '../assets/files/swiftCatalog.pdf'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 
 export function CarDetails() {
@@ -70,9 +72,9 @@ export function CarDetails() {
                 <i class="fa-solid fa-phone-volume"></i>
                 <span>שיחה עם נציג</span>
             </button>
-            <button className="go-to-contact-us btn">
+           <Link className="inside-link"  to="#contactId"><button className="go-to-contact-us btn">
                 לתיאום פגישה
-            </button>
+            </button></Link> 
 
         </section>
 
@@ -131,7 +133,11 @@ export function CarDetails() {
         </section>
 
         <img className="pollution-img" src={currCar.pollutionImg} />
-        <ContactUs />
+
+        <div id="contactId">
+
+        <ContactUs  />
+        </div>
 
 
 

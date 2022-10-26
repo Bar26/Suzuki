@@ -1,0 +1,17 @@
+.contact-us-page-container{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    width: 100%;
+
+    img{
+        width: 50%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .contact-us-container{
+        width: 50%;
+    }
+}

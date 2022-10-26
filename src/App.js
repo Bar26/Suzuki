@@ -5,6 +5,7 @@ import { Footer } from './cmps/Footer'
 import { CarListPage } from './pages/CarListPage'
 import { CarDetails } from './pages/CarDetails'
 import { PurchaseProcess } from './pages/PurchaseProcess'
+import { ContactUsPage } from './pages/ContactUsPage'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 						<Route path="/cars" element={<CarListPage />} />
 						<Route path="/cars/:carId" element={<CarDetails />} />
 						<Route path="/purchase-process" element={<PurchaseProcess />} />
+						<Route path="/contact-us" element={<ContactUsPage />} />
 
 					</Routes>
 				</main>

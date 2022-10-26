@@ -79,5 +79,22 @@
         }
     }
 
+    .pop-up-container{
+        bottom: 20px;
+        position: absolute;
+        right: -202px;
+    
+        &.show{
+            animation: move 3s;
+        }
+    }
+
 }
+
+@keyframes move {
+    0%   {right: -202px;}
+    30%  {right: 70px;}
+    50% {right:70px;}
+    100% {right: -202px;}
+  }
 

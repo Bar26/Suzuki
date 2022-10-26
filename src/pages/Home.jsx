@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from "react"
 import { CarSafetyDetails } from "../cmps/CarSafetyDetails"
 import { CarList } from "../cmps/CarList"
 import { ContactUs } from "../cmps/ContactUs"
+// import { Link } from "react-router-dom"s
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 export function Home() {
 
@@ -93,13 +96,16 @@ export function Home() {
             </div> */}
             <div className="inner-img" style={{ backgroundImage: `URL(${imgs[imgNum].img}) `, aspectRatio: imgs[imgNum].a_r }}>
                 <div className="call-to-action-btns">
-                    <button className="more-info">לפרטים נוספים</button>
-                    <button className="contact-us">תחזרו אליי</button>
+                    <Link className="more-info" to="/cars"> <button className="more-info">לפרטים נוספים</button></Link>
+                    <Link to="#contactId"><button className="contact-us">תחזרו אליי</button></Link>
                 </div>
             </div>
             <span className="arrow-right" onClick={() => onChangeImg(1)}><i class="fa-solid fa-angle-right"></i></span>
             <span className="arrow-left" onClick={() => onChangeImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
-            <button className="toggle-play" onClick={OnTogglePlay}>עצור ניגון</button>
+            <button className="toggle-play" onClick={OnTogglePlay}>
+                <span>עצור ניגון</span>
+                <i class="fa-solid fa-pause"></i>
+            </button>
             <CarSafetyDetails />
             <hr />
         </div>
@@ -107,7 +113,10 @@ export function Home() {
         <CarList />
 
         <hr />
-        <ContactUs />
+        <div id="contactId">
+            <ContactUs />
+        </div>
+
 
 
     </section>

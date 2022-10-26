@@ -48,10 +48,13 @@
                 display: flex;
                 gap: 15px;
                 > * {
-                    padding:3px 6px;
+                    >*{
+                         padding:3px 6px;
                     width: 240px;
                     height: 50px;
                     font-size: rem(30px);
+                    }
+                   
                 }
 
                 .more-info {
@@ -105,6 +108,9 @@
             height: 50px;
             @include flex-center;
             font-size: rem(18px);
+            display: flex;
+            gap:5px;
+
         }
     }
 }
