@@ -3,7 +3,8 @@
     padding: 0 70px 70px;
     .main-img {
         width: 100%;
-        // max-height: 520px;
+        // max-height: 470px;
+        max-height: 550px;
         object-fit: cover;
     }
     .car-name {
@@ -45,6 +46,7 @@
                 flex: 1;
                 text-align: right;
                 justify-self: flex-end;
+                text-underline-offset: 0.25rem;
             }
         }
 
@@ -124,7 +126,7 @@
                 .arrow-right {
                     position: absolute;
                     font-size: rem(24px);
-                    right: 2.5%;
+                    right: -2.5%;
                     top: 50%;
                     cursor: pointer;
                     transform: translateY(-50%);
@@ -132,7 +134,7 @@
                 .arrow-left {
                     position: absolute;
                     font-size: rem(24px);
-                    left: 2.5%;
+                    left: -2.5%;
                     top: 50%;
                     transform: translateY(-50%);
                 }
@@ -143,9 +145,12 @@
             box-shadow: 0px 0px 2px 1px #dfe1e6;
             width: 80%;
         }
+        .pollution-img {
+            width: 100%;
+        }
     }
 
-    .pollution-img {
-        width: 100%;
+    .last-hr {
+        margin: 60px 0;
     }
 }

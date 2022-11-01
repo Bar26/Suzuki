@@ -6,6 +6,7 @@ import { CarListPage } from './pages/CarListPage'
 import { CarDetails } from './pages/CarDetails'
 import { PurchaseProcess } from './pages/PurchaseProcess'
 import { ContactUsPage } from './pages/ContactUsPage'
+import { Gallery } from './pages/Gallery'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 						<Route path="/cars/:carId" element={<CarDetails />} />
 						<Route path="/purchase-process" element={<PurchaseProcess />} />
 						<Route path="/contact-us" element={<ContactUsPage />} />
+						<Route path="/gallery" element={<Gallery />} />
 
 					</Routes>
 				</main>

@@ -10,7 +10,9 @@ export function CarPreview({ car }) {
     const navigate = useNavigate()
 
 
-    const onChooseCar = () => {
+    const onChooseCar = async () => {
+        await dispatch(setCurrCar(car._id))
+
         navigate(`/cars/${car._id}`)
     }
 

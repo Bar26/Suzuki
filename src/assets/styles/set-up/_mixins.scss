@@ -18,14 +18,14 @@
 	}
 	.card-img {
 		width: 100%;
-		max-height: 450px;
+		max-width: 1000px;
+		max-height: 500px;
 		object-fit: cover;
 	}
 }
 
 @mixin mini-card {
 	text-align: center;
-	width: calc(50% - 15px);
 
 	.title {
 		font-size: rem(24px);
@@ -37,7 +37,8 @@
 	.mini-img {
 		object-fit: cover;
 		width: 100%;
-		aspect-ratio: 555 / 370;
+		// aspect-ratio: 1.5 / 1;
+		// height: max-content;
 		
 	}
 	

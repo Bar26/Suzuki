@@ -1,28 +1,46 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { setCurrCar } from '../store/CarActions'
+import { loadCars, setCurrCar } from '../store/CarActions'
 import { BigCards } from "../cmps/BigCards";
 import { MiniCards } from "../cmps/MiniCards";
 import { ContactUs } from "../cmps/ContactUs"
+import { useEffectUpdate } from "../cmps/useEffectUpdate";
 import swiftTech from '../assets/files/swiftTech.pdf'
 import swiftCatalog from '../assets/files/swiftCatalog.pdf'
+import crossTech from '../assets/files/crossTech.pdf'
+import crossCatalog from '../assets/files/crossCatalog.pdf'
+import ignisTech from '../assets/files/ignistech.pdf'
+import ignisCatalog from '../assets/files/ignisCatalog.pdf'
+import vitaraTech from '../assets/files/vitaraTech.pdf'
+import vitaraCatalog from '../assets/files/vitaraCatalog.pdf'
+import jimnyTech from '../assets/files/jimnyTech.pdf'
+
 import { HashLink as Link } from 'react-router-hash-link';
+import { SafetyIcons } from "../cmps/SafetyIcons";
 
 
 
 export function CarDetails() {
     const { currCar } = useSelector((state) => state.carModule)
+    const { cars } = useSelector((state) => state.carModule)
     const { carId } = useParams()
     const dispatch = useDispatch()
     const safetyRefs = useRef([])
     let currImgIdx = 0
 
     const techLinks = {
-        "swiftTech": swiftTech  //////////////// NOT COMPLETE 
+        "swiftTech": swiftTech,
+        "crossTech": crossTech,
+        "vitaraTech": vitaraTech,
+        "ignisTech": ignisTech,
+        "jimnyTech": jimnyTech
     }
     const catalogLinks = {
-        "swiftCatalog": swiftCatalog  //////////////// NOT COMPLETE 
+        "swiftCatalog": swiftCatalog,
+        "crossCatalog": crossCatalog,
+        "vitaraCatalog": vitaraCatalog,
+        "ignisCatalog": ignisCatalog
     }
 
     useEffect(() => {
@@ -52,8 +70,9 @@ export function CarDetails() {
 
 
     if (!Object.keys(currCar).length) return
+    // if (!Object.keys(currCar || {}).length) return
     return <section className="car-details-container">
-        <img className="main-img" src={currCar.imgs.mainImg} alt="suzuki swift" />
+        <img className="main-img" src={currCar.imgs.mainImg} alt="suzuki" />
 
         <section className="car-actions">
             <div className="price-container">
@@ -72,9 +91,9 @@ export function CarDetails() {
                 <i class="fa-solid fa-phone-volume"></i>
                 <span>שיחה עם נציג</span>
             </button>
-           <Link className="inside-link"  to="#contactId"><button className="go-to-contact-us btn">
+            <Link className="inside-link" to="#contactId"><button className="go-to-contact-us btn">
                 לתיאום פגישה
-            </button></Link> 
+            </button></Link>
 
         </section>
 
@@ -98,19 +117,18 @@ export function CarDetails() {
 
             <div className="links-container">
                 <a href={getLink(currCar.techLinkName, true)} target="_blank"  >מפרט טכני</a>
-                <a href={getLink(currCar.catalogLinkName, false)} target="_blank" >קטלוג</a>
+                {currCar.catalogLinkName && <a href={getLink(currCar.catalogLinkName, false)} target="_blank" >קטלוג</a>}
             </div>
-
 
             <MiniCards miniCards={currCar.infoImgs.miniCards} />
             <hr />
-
             <BigCards bigCards={currCar.infoImgs.bigCards} />
             <hr />
 
 
 
-            {Object.keys(currCar.infoImgs.safety) && <section className="safety">
+
+            {currCar.infoImgs.safety && <section className="safety">
 
                 <header className="title">
                     {currCar.infoImgs.safety.text.title}
@@ -125,18 +143,22 @@ export function CarDetails() {
                     <span className="arrow-left" onClick={() => onNextImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
                 </div>
             </section>}
-            <hr />
+            {currCar.infoImgs.safety && <hr />}
+
+            {currCar.infoImgs.safetyIcons && <SafetyIcons safetyIcons={currCar.infoImgs.safetyIcons} />}
+            {currCar.infoImgs.safetyIcons && <hr />}
 
 
-            <video autoPlay muted preload="auto" loop="loop" src="https://res.cloudinary.com/debmbjvbh/video/upload/v1666376298/suzuki/swift/10_-_Meet_the_New_Hybrid_Suzuki_Swift_yhvceu.mp4" />
+            <video autoPlay muted preload="auto" loop="loop" src={currCar.video} />
             <hr />
+            <img className="pollution-img" src={currCar.pollutionImg} />
         </section>
 
-        <img className="pollution-img" src={currCar.pollutionImg} />
 
+        <hr className="last-hr" />
         <div id="contactId">
 
-        <ContactUs  />
+            <ContactUs />
         </div>
 
 

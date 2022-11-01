@@ -8,12 +8,12 @@ export function ContactUs() {
     const { cars } = useSelector((state) => state.carModule)
     const formRef = useRef()
     const [clientInfo, setClientInfo] = useState({
-        "first-name": "",
-        "last-name": "",
-        "email": "",
-        "phone": "",
-        "model": "",
-        "text": ""
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        model: "",
+        text: ""
     })
     const [isShowMsg, setIsShowMsg] = useState(false)
     const popUpRef = useRef()
@@ -30,12 +30,12 @@ export function ContactUs() {
         if (!clientInfo.text) delete clientInfo.text
         clientService.addClient(clientInfo)
         setClientInfo({
-            "first-name": "",
-            "last-name": "",
-            "email": "",
-            "phone": "",
-            "model": "",
-            "text": ""
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            model: "",
+            text: ""
         })
         formRef.current.reset()
         showMsg()
@@ -58,8 +58,8 @@ export function ContactUs() {
         </header>
         <form ref={formRef} onSubmit={onAddClient} onChange={handleChange} className="contact-us-form">
 
-            <input name="first-name" className="first-name" type="text" placeholder="*שם פרטי" required />
-            <input name="last-name" className="last-name" type="text" placeholder="*שם משפחה" required />
+            <input name="firstName" className="first-name" type="text" placeholder="*שם פרטי" required />
+            <input name="lastName" className="last-name" type="text" placeholder="*שם משפחה" required />
             <input name="email" id="1" className="mail" type="email" placeholder="*אימייל" required />
             <input name="phone" className="phone" type="tel" placeholder="*טלפון (055-5555555)" required
                 pattern="[0-9]{3}-[0-9]{7}" />

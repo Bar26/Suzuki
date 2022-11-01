@@ -1,0 +1,47 @@
+.safety-icons-container {
+    width: 100%;
+
+    .safety-header {
+        @include big-card;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .safety-grid {
+        // display: grid;
+        // // grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+        // width: 100%;
+        // grid-template-rows: 1fr 1fr;
+        // grid-template-columns: 1fr 1fr;
+        // gap: 20px;
+        // column-gap: 1fr;
+        // justify-content: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap:20px;
+
+        .safety-icon {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 450px;
+            gap:1fr;
+            border: 1px solid;
+            border: 1px solid rgba(9, 30, 66, 0.1294117647);
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+
+            .icon {
+                width: 80px;
+            }
+            .safety-title {
+                font-size: rem(20px);
+                flex: 1;
+            }
+        }
+    }
+}

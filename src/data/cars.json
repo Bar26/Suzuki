@@ -9,10 +9,10 @@
         "licensing": "1,246",
         "pollution": "3",
         "safety": "6",
-        "pollutionImg":"https://res.cloudinary.com/debmbjvbh/image/upload/v1666541674/suzuki/%D7%9E%D7%93%D7%93%D7%99%20%D7%96%D7%99%D7%94%D7%95%D7%9D/%D7%A1%D7%95%D7%95%D7%99%D7%A4%D7%98_%D7%A1%D7%A8%D7%92%D7%9C_%D7%96%D7%99%D7%94%D7%95%D7%9D_03.22_xgyrwj.jpg",
+        "pollutionImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666541674/suzuki/%D7%9E%D7%93%D7%93%D7%99%20%D7%96%D7%99%D7%94%D7%95%D7%9D/%D7%A1%D7%95%D7%95%D7%99%D7%A4%D7%98_%D7%A1%D7%A8%D7%92%D7%9C_%D7%96%D7%99%D7%94%D7%95%D7%9D_03.22_xgyrwj.jpg",
         "isHybrid": "true",
-        "techLinkName":"swiftTech",
-        "catalogLinkName":"swiftCatalog",
+        "techLinkName": "swiftTech",
+        "catalogLinkName": "swiftCatalog",
         "colors": [
             [
                 "#1b1b1b",
@@ -69,15 +69,21 @@
             },
             "bigCards": [
                 {
-                    "imgs": [
-                        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865429/suzuki/swift/swiftForSafety_nyobiw.jpg",
-                        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift4_fze9hn.webp ",
-                        "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849099/suzuki/swift/swift8_lxwxbo.webp"
-                    ],
-                    "text": {
-                        "title": "מעוצבת, ספורטיבית ומהנה לנהיגה",
-                        "content": "מכונית שמושכת תשומת לב, עם עיצוב ספורטיבי הכולל נגיעות חכמות של כרום וסגסוגת אלומיניום. כל פרט תורם למראה הייחודי. לסוויפט מראה שרירי המעניק לה נוכחות חזקה. "
-                    }
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663865429/suzuki/swift/swiftForSafety_nyobiw.jpg",
+                        "text": {
+                            "title": "מעוצבת, ספורטיבית ומהנה לנהיגה",
+                            "content": "מכונית שמושכת תשומת לב, עם עיצוב ספורטיבי הכולל נגיעות חכמות של כרום וסגסוגת אלומיניום. כל פרט תורם למראה הייחודי. לסוויפט מראה שרירי המעניק לה נוכחות חזקה. "
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849097/suzuki/swift/swift4_fze9hn.webp"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849099/suzuki/swift/swift8_lxwxbo.webp"
+                        }
+                    ]
                 }
             ],
             "miniCards": [
@@ -92,7 +98,7 @@
                     "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849100/suzuki/swift/swift9_t1az1q.webp",
                     "text": {
                         "title": "מערכת בקרת אקלים",
-                        "content": "כשתפעלים את בקרת האקלים בזמן נהיגה, הדבר החארון שרוצים הוא תפעול מסובך המחייב להסיט מבט מהכביס לזמן ממושך. בקרת האקלים מאפשרת הפעלה קלה,, מבלי להסתבך הבוררים האוטומטיים אינטואיטיביים, עם תצוגת LCD ברורה."
+                        "content": "בקרת האקלים מאפשרת הפעלה קלה, בוררים אוטומטיים אינטואיטיביים עם תצוגת LCD ברורה."
                     }
                 },
                 {
@@ -124,5 +130,489 @@
             },
             "interior": []
         }
+    },
+    {
+        "name": "סוזוקי קרוסאובר החדשה",
+        "_id": "c2",
+        "nameEN": "The New S-Cross 1.4 Turbo Hybrid",
+        "price": "142,990",
+        "licensing": "1,834",
+        "pollution": [
+            "4",
+            "7"
+        ],
+        "safety": "6",
+        "pollutionImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666541673/suzuki/%D7%9E%D7%93%D7%93%D7%99%20%D7%96%D7%99%D7%94%D7%95%D7%9D/%D7%A7%D7%A8%D7%95%D7%A1%D7%90%D7%95%D7%91%D7%A8_%D7%A1%D7%A8%D7%92%D7%9C_%D7%96%D7%99%D7%94%D7%95%D7%9D_6.22_ysmelu.png",
+        "isHybrid": "true",
+        "techLinkName": "crossTech",
+        "catalogLinkName": "crossCatalogCatalog",
+        "imgs": {
+            "mainImg": "https://res.cloudinary.com/debmbjvbh/video/upload/v1666795287/suzuki/Cross/cross-video_Trim_eg6rfk.mp4",
+            "floatImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185701/suzuki/floating%20imgs/crossfloat2_lte29u.png"
+        },
+        "infoImgs": {
+            "main": {
+                "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1665179789/suzuki/floating%20imgs/res-console.cloudinary_ovjeqy.png",
+                "text": {
+                    "title": "  The New S-Cross 1.4 Turbo Hybrid הכירו את סוזוקי קרוסאובר החדשה - ",
+                    "content": "הקרוסאובר טורבו היברידית החדשה מבית סוזוקי, רכב הפנאי המשפחתי החדש, המציע הנאת נהיגה מושלמת, ביצועים מתקדמים, נוחות מקסימאלית עכשיו בעיצוב חדשני ונועז."
+                }
+            },
+            "bigCards": [
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664745141/suzuki/Cross/s_cross_1_vootos.jpg",
+                        "text": {
+                            "title": "עיצוב SUV חדש ונועז",
+                            "content": "מערכת היברידית קומפקטית עם סוללת ליתיום המוסיפיה כח למנוע ומשפרת חיסכון בדלק, מנוע DUALJET 2.1 ליטר, חדש וחסכוני במיוחד."
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666804082/suzuki/Cross/%D7%A9%D7%9B%D7%91%D7%94_%D7%A7%D7%93%D7%9E%D7%99%D7%AA_r7zlkq.png",
+                            "text": {
+                                "title": "מסילות גג אלומיניום מובנות"
+                            }
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1663849100/suzuki/swift/swift11_r9rztj.webp",
+                            "text": {
+                                "title": "שבכה קדמית חזקה"
+                            }
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666804071/suzuki/Cross/%D7%A4%D7%A0%D7%A1%D7%99_%D7%9C%D7%932_hwnpts.webp",
+                            "text": {
+                                "title": "פנסי לד קדמיים ואחוריים"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666871109/suzuki/Cross/cross8_efanfd.png",
+                        "text": {
+                            "title": "הטכנולוגיה ההיברידית של סוזוקי",
+                            "content": "המערכת ההיברידית של ה-S-CROSS נכנסת לפעולה באופן אוטומטי כדי לספק את חוויית הנהיגה הטובה ביותר. היא משמשת לשיפור צריכת הדלק במהלך נסיעות רגילות, ומוסיפה עוד כוח למנוע בעת הצורך."
+                        }
+                    }
+                },
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666878623/suzuki/Cross/cross12_xrjnrd.jpg",
+                        "text": {
+                            "title": "מערכת הנעה 4X4 ALLGRIP",
+                            "content": "ה-s-cross הוא רכב SUV המתאים עצמו לכל תוואי השטח ולתנאי הדרך.​אתם נשארים בשליטה בכל מצב נהיגה: שלג, שטח, כביש וביצועים ספורטיבים - הודות למערכת ALLGRIP SELECT.​זוהי טכנולוגיה ייחודית לסוזוקי השולטת על כל ארבעת הגלגלים, ומאפשרת לכם לנסוע בבטחה בכל דרך."
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666878614/suzuki/Cross/cross15_blpij6.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666870885/suzuki/Cross/cross7_oxgdtt.png"
+                        }
+                
+                    ]
+                }
+            ],
+            "miniCards": [
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666871107/suzuki/Cross/cross9_aqlwes.png",
+                    "text": {
+                        "title": "מערכת מולטימדיה מקורית ומתקדמת",
+                        "content": "​ב-S- CROSS מגוון פונקציות וטכנולוגיות שמאפשרות לבקר את מערכות ​הרכב ולהישאר מחוברים למה שקורה, בכל מקום ."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666878624/suzuki/Cross/cross-luggage_om8jlg.jpg",
+                    "text": {
+                        "title": "חלל אחסון",
+                        "content": "חלל אחסון גמיש ומודולארי הודות למושב אחורי מפוצל ומגוון מצבים של המשטח התחתון, מושבים אחוריים מתכווננים להגברת נוחות והגדלת שטח המטען."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666881137/suzuki/Cross/%D7%91%D7%A7%D7%A8%D7%AA_%D7%90%D7%A7%D7%9C%D7%99%D7%9D_uaknmi.png",
+                    "text": {
+                        "title": "בקרת אקלים מפוצלת",
+                        "content": "המזגן מאפשר בקרת אקלים נפרדת לנהג ולנוסע הקדמי, כל שכל אחד מהם יכול לשלוט בטמפרטורה בהתאם להעדפותיו."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666878611/suzuki/Cross/cross-interior_xxd98y.jpg",
+                    "text": {
+                        "title": "תא נוסעים מרווח",
+                        "content": "תא הנוסעים מתאפיין במרחב ישיבה נדיב מלפנים ומאחור, כך שניתן להירגע ולהנות מהנסיעה."
+                    }
+                }
+            ],
+            "interior": []
+        }
+    },
+
+
+
+    {
+        "name": "סוזוקי איגניס היברידית",
+        "_id": "c3",
+        "nameEN": "Suzuki Ignis Hybrid",
+        "price": "104,990",
+        "licensing": "1,246",
+        "pollution": [
+            "3",
+            "3"
+        ],
+        "safety": "3",
+        "pollutionImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666541673/suzuki/%D7%9E%D7%93%D7%93%D7%99%20%D7%96%D7%99%D7%94%D7%95%D7%9D/%D7%90%D7%99%D7%92%D7%A0%D7%99%D7%A1_%D7%A1%D7%A8%D7%92%D7%9C_%D7%96%D7%99%D7%94%D7%95%D7%9D_03.22_ayyrct.jpg",
+        "isHybrid": "true",
+        "techLinkName": "igniaTech",
+        "catalogLinkName": "ignisCatalogCatalog",
+        "imgs": {
+            "mainImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060631/suzuki/Ignis/ignis18_ttyozn.jpg",
+            "floatImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060624/suzuki/Ignis/ignisfloat2_pb9gmn.png"
+        },
+        "infoImgs": {
+            "main": {
+                "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664806898/suzuki/Ignis/ignis_icon1_ro4cdr.png",
+                "text": {
+                    "title": "  The New S-Cross 1.4 Turbo Hybrid הכירו את סוזוקי קרוסאובר החדשה - ",
+                    "content": "סוזוקי איגניס היברידית החדשה עם מנוע היברידי חכם, איכותי ויעיל, חסכוני וידידותי לסביבה מבית המותג האמין, כעת נגיש לכולם!האיגניס עוצבה מחדש עם עדכון חזית גריל שונה המייצרת מראה אגרסיבי וג'יפוני יותר אך מתאימה גם לשימושים עירוניים. בזכות המראה המחוספס ויכולות הקרוסאובר, גם נהיגה בעיר הופכת לחוויה."
+                }
+            },
+            "bigCards": [
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060617/suzuki/Ignis/ignis24_naky3y.jpg",
+                        "text": {
+                            "title": "ג'יפון קומפקטי ייחודי",
+                            "content": "יש רק רכב SUV  קומפקטי אחד. האיגניס נראית קשוחה, אבל היא גם זריזה ומתאימה לשימושים עירוניים - אין עוד רכב כזה..בזכות המראה המחוספס, ויכולותהקרוסאובר, גם נהיגה בעיר הופכת לחוויה."
+                        }
+                    }
+                },
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060631/suzuki/Ignis/ignis18_ttyozn.jpg",
+                        "text": {
+                            "title": "עיצוב SUV אייקוני",
+                            "content": ", חזית קשוחה ומראה מחוספס המעניקים לאיגניס נוכחות שלא ניתן להתעלם ממנה. לאיגניס מראה ייחודי מכל זוית"
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060612/suzuki/Ignis/ignis11_vzat2o.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060612/suzuki/Ignis/ignis22_nqbtgq.jpg"
+                        }
+                
+                    ]
+                },
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060617/suzuki/Ignis/ignis24_naky3y.jpg",
+                        "text": {
+                            "title": "קומפקטי אך מרווח",
+                            "content": "אל תתבלבלו מהגודל הקומפקטי. לאיגניס יש שפע של מרחב גמיש למטען, שהופך אותה לרכב האידאלי לטיולים. קיפול מושבים אחוריים מאפשר להתאים בקלות את החלל לסוגים שונים של מטען."
+                        }
+                    }
+                },
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666878623/suzuki/Cross/cross12_xrjnrd.jpg",
+                        "text": {
+                            "title": "ALLGRIP AUTO",
+                            "content": "הודות למערכת ALLGRIP תוכלו לנסוע בבטחה בכל דרך.   "
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667061300/suzuki/Ignis/allgrip3_obxpts.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667061302/suzuki/Ignis/allgrip2_ucw4zv.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667061305/suzuki/Ignis/allgrip1_ncd1k7.jpg"
+                        }
+                    ]
+                }
+            ],
+            "miniCards": [
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666871107/suzuki/Cross/cross9_aqlwes.png",
+                    "text": {
+                        "title": "ההיברידית החסכונית",
+                        "content": "הרכב מצויד במערכת היברידית SHVS המספקת תוספת כוח למנוע הבנזין, ביעילות ובחיסכון בצריכת הדלק. המנוע החדש של האיגניס מתאפיין בתגובתיות ועוצמה, כמו גם בחיסכון משמעותי בצריכת הדלק."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667066538/suzuki/Ignis/igniswheel_a5xbof.png",
+                    "text": {
+                        "title": "בקרת שיוט וכפתורי בקרה",
+                        "content": "בקרת השיוט מאפשרת לרכב לשמור על מהירות קבועה ללא צורך ללחוץ על דוושת ההאצה, בכך מאפשרת להפחית עייפות בנסיעה ממושכת ומפשרת חיסון בצריכת הדלק."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667065204/suzuki/Ignis/ignisInterior_esrpxj.jpg",
+                    "text": {
+                        "title": "עיצוב פנימי ייחודי",
+                        "content": "עם מראה פרימיום מלוטש,ואפשרויות לצבע דינמי, העיצוב הפנימי מדגיש את הסטייל האורבני של האיגניס."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667065203/suzuki/Ignis/ignisInterior2_ce7lhg.jpg",
+                    "text": {
+                        "title": "צבע דינמי",
+                        "content": "פסי קישוט בכחול או אפור מטאלי על הקונסולה המרכזית ועל ידיות הדלתות."
+
+                    }
+                }
+            ],
+            "safety": {
+                "imgs": [
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060625/suzuki/Ignis/safety1_cam4d3.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060627/suzuki/Ignis/safety2_fm0gzv.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060629/suzuki/Ignis/safety3_akscnk.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060630/suzuki/Ignis/safety4_xcywj2.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060611/suzuki/Ignis/safety5_ffgadf.jpg",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667060612/suzuki/Ignis/safety6_vkhjsc.jpg"
+                ],
+                "text": {
+                    "title": "מערכות בטיחות מתקדמות",
+                    "content": "האיגניס מצוידת במגוון טכנולוגיות לשיפור בטיחות הנהיגה. מערכת התרעה ובלימה אוטומטית, התראת סטייה מנתיב, התראת סטייה בתוך הנתיב ואורות חירום מהבהבים."
+                }
+            }
+        }
+    },
+    {
+        "name": "ויטרה טורבו היברידית",
+        "_id": "c4",
+        "nameEN": "Vitara Turbo Hybrid",
+        "price": "142,990",
+        "licensing": "1,834",
+        "pollution": [
+            "4"
+        ], 
+        "safety": "6",
+        "pollutionImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666541676/suzuki/%D7%9E%D7%93%D7%93%D7%99%20%D7%96%D7%99%D7%94%D7%95%D7%9D/%D7%95%D7%99%D7%98%D7%A8%D7%94_%D7%A1%D7%A8%D7%92%D7%9C_%D7%96%D7%99%D7%94%D7%95%D7%9D_03.22_pvugms.jpg",
+        "isHybrid": "true",
+        "techLinkName": "vitaraTech",
+        "catalogLinkName": "vitaraCatalog",
+        "video":"https://res.cloudinary.com/debmbjvbh/video/upload/v1667146459/suzuki/Vitara/WhatsApp_Video_2022-10-30_at_18.12.44_wxo7yj.mp4",
+        "imgs": {
+            "mainImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805680/suzuki/Vitara/vitara_silver_b1k3fu.jpg",
+            "floatImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185697/suzuki/floating%20imgs/vitarafloat2_hotkqr.png"
+        },
+        "infoImgs": {
+            "main": {
+                "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667149232/suzuki/Vitara/vitarafloat3_om6vxu_f6a3d9.jpg",
+                "text": {
+                    "title": "ויטרה טורבו היברידית - Vitara Turbo Hybrid",
+                    "content": "ממשיכים את ההצלחה עם הויטארה טורבו בעלת מנוע 1.4 ליטר טורבו חזק, חסכוני ועכשיו עם הנעה היברידית ושלל מערכות בטיחות מתקדמות ביותר, בגרסאות 2X4 & 4X4."
+                }
+            },
+            "bigCards": [
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805691/suzuki/Vitara/vitara_orange_7_knypy0.jpg",
+                        "text": {
+                            "title": "קווי עיצוב הפנאי שטח (SUV) של סוזוקי",
+                            "content": "הויטרה בעלת המראה העוצמתי, גריל קדמי חזק ופסי כרום מסוגננים המעניקים לויטרה מראה מלוטש ומודרני."
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667144056/suzuki/Vitara/vitaraback2_vla5mx_g91p4k.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667143974/suzuki/Vitara/vitara_orange_ctvoap_gu9xqp.jpg"
+                        }
+                
+                    ]
+                },
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664889288/suzuki/Vitara/vitara_3_oq226r.jpg",
+                        "text": {
+                            "title": "מערכת הנעה 4X4 ALLGRIP",
+                            "content": "הויטרה הוא רכב SUV המתאים עצמו לכל תוואי השטח ולתנאי הדרך.​ אתם נשארים בשליטה בכל מצב נהיגה: שלג, שטח, כביש וביצועים ספורטיבים - הודות למערכת ALLGRIP SELECT .​זוהי טכנולוגיה ייחודית לסוזוקי השולטת על כל ארבעת הגלגלים, ומאפשרת לכם לנסוע בבטחה בכל דרך ."
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805690/suzuki/Vitara/vitara_orange_4_wynjie.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667148572/suzuki/Vitara/vitara15_i34zw5_fymisd_qbxe0y.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805686/suzuki/Vitara/vitara_orange_3_g3oz2t.jpg"
+                        }
+                
+                    ]
+                }
+            ],
+            "miniCards": [
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805690/suzuki/Vitara/vitara_orange_6_fdyue9.jpg",
+                    "text": {
+                        "title": "מערכת היברידית קומפקטית ",
+                        "content": "הויטרה מצוידת במערכת היברידית קומפקטית עם סוללת ליתיום המוסיפה כח למנוע ומשפרת חיסכון בדלק."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667143759/suzuki/Vitara/vitarainterior_pav5v3_olx9pu.jpg",
+                    "text": {
+                        "title": "נוחות מקסימלית",
+                        "content": "מיזוג אוויר אוטומטי, משענת יד קדמית, תצוגת LCD , לוח מחוונים מרופד, מערכת שמע וקישוריות לנייד."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667143671/suzuki/Vitara/vitaraluggage_ncas4y.jpg",
+                    "text": {
+                        "title": "חלל נדיב בתא המטען",
+                        "content": "פתיחה רחבה של תא המטען, גובה טעינה נמוך וחלל טעינה מרשים בנפח."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666892657/suzuki/Cross/cross-multi-media_xoy5g7.jpg",
+                    "text": {
+                        "title": "מערכת מולטימדיה מקורית ומתקדמת",
+                        "content": "בויטרה מגוון פונקציות וטכנולוגיות שמאפשרות לבקר את מערכות ​הרכב ולהישאר מחוברים למה שקורה, בכל מקום ."
+                    }
+                }
+            ],
+            "safetyIcons":[
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307226/suzuki/Cross/icon1_at1ly6.gif",
+                    "title":"מערכת אופטית כפולה למניעת התנגשות"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307222/suzuki/Cross/icon2_id8cle.gif",
+                    "title":"התרעת סטייה מנתיב"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307215/suzuki/Cross/icon3_krxguo.gif",
+                    "title":"מניעת סטייה מנתיב"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307199/suzuki/Cross/icon4_k2xs3i.gif",
+                    "title":"התרעה על סטייה בתוך הנתיב"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307196/suzuki/Cross/icon6_lxy4dt.gif",
+                    "title":"בקרת שיוט אדפטיבית עם בלימה עצמית"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307194/suzuki/Cross/icon7_qqtn5w.gif",
+                    "title":"ניטור ״שטח מת״"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307193/suzuki/Cross/icon8_lmdcns.gif",
+                    "title":"בקרת דרדור במורד"
+                },
+                {
+                    "img":"https://res.cloudinary.com/debmbjvbh/image/upload/v1667307192/suzuki/Cross/icon9_hlhjbc.gif",
+                    "title":"התרעה על רכב חוצה בנסיעה לאחור"
+                }
+            ]
+        }
+    },
+
+
+
+    {
+        "name": "סוזוקי ג'ימני",
+        "_id": "c5",
+        "nameEN": "Suzuki Jimny",
+        "price": "146,990",
+        "licensing": "1,834",
+        "pollution": [
+            "12",
+            "14"
+        ], 
+        "safety": "3",
+        "pollutionImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1666541674/suzuki/%D7%9E%D7%93%D7%93%D7%99%20%D7%96%D7%99%D7%94%D7%95%D7%9D/%D7%92%D7%99%D7%9E%D7%A0%D7%99_%D7%A1%D7%A8%D7%92%D7%9C_%D7%96%D7%99%D7%94%D7%95%D7%9D_03.22_xp5vew.jpg",
+        "isHybrid": "false",
+        "techLinkName": "jimnyTech",
+        "catalogLinkName": "",
+        "video":"https://res.cloudinary.com/debmbjvbh/video/upload/v1664806394/suzuki/Jimny/01_-_JIMNY____Nobody_But_Jimny____Suzuki_blrd5k.mp4",
+        "imgs": {
+            "mainImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667153920/suzuki/Jimny/jimnymain_qgb6vx.webp",
+            "floatImg": "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185679/suzuki/floating%20imgs/jimnyfloat2_frqwib.png"
+        },
+        "infoImgs": {
+            "main": {
+                "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1665180093/suzuki/Jimny/jimni_float_rgziah.jpg",
+                "text": {
+                    "title": "סוזוקי ג'ימני - Suzuki Jimny",
+                    "content": "סוזוקי ג'ימני רכב השטח המיתולוגי עכשיו בגירסה חדשה וקשוחה מתמיד. סוזוקי ג'ימני הוא ג'יפ המספק חוויית נסיעה מהנה בטבע או בעיר. מראה מעודכן וקשוח וביצועים שמשמרים ומחזקים את מאפייני הג'ימני כרכב קטן, קל וייחודי בעל הנעת 4x4 וטכנולוגיית ALLGRIP PRO."
+                }
+            },
+            "bigCards": [
+                {
+                    "big": {
+                        "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664806376/suzuki/Jimny/jimny_yellow_4_gnufev.jpg",
+                        "text": {
+                            "title": "All Grip Pro",
+                            "content": "בזכות מערכת ה-4X4 עם טכנולוגיית ALLGRIP PRO המאפשרת מעבר בין מצבים במהלך הנהיגה ומימדיו הקטנים יחסית, כל נסיעה בג'ימני מבטיחה רמת ביצועים גבוהה ועבירות מצוינת בשטח עם יעילות בצריכת הדלק."
+                        }
+                    },
+                    "mini": [
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664806379/suzuki/Jimny/jimny_yellow_5_z4pgqx.jpg"
+                        },
+                        {
+                            "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1664806370/suzuki/Jimny/jimny4_lemwh2.webp"
+                        }
+                
+                    ]
+                }
+            ],
+            "miniCards": [
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667153266/suzuki/Jimny/jimnybuttom_laqrck_0d8d4e.jpg",
+                    "text": {
+                        "title": "שלדת סולם",
+                        "content": "שלדת הסולם הקשיחה והחזקה של הג'ימני שומרת על תחושת היציבות ותחושת נוחות הנסיעה גם בתנאי דרך קשים במיוחד."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667153189/suzuki/Jimny/jimnyinterior_vgezmf_bf4a26.jpg",
+                    "text": {
+                        "title": "חלל פנימי מוקפד",
+                        "content": "העיצוב הפנימי והפונקציונאלי מעניק לך ולכל יושבי הרכב נוחות מושלמת. כל פרט מיוצר מתוך מחשבה וכדי לתמוך בנהיגת שטח רצינית."
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667153434/suzuki/Jimny/jimnyback_pyamqw_570413.jpg",
+                    "text": {
+                        "title": "פגושים אופטימליים",
+                        "content": "קצוות פגוש זוויתיים המגדילים את המרווח בגלגלים לטיפוס בטוח מעל מכשולים."
+                        
+                    }
+                },
+                {
+                    "img": "https://res.cloudinary.com/debmbjvbh/image/upload/v1667153366/suzuki/Jimny/jimnyluggage3_kxbz5u_eac97f.jpg",
+                    "text": {
+                        "title": "חלל אחסון",
+                        "content": "ג'ימני מציעה מקום רב וחללי אחסון פרקטיים כדי להתאים לכל צורך."
+                    }
+                }
+            ],
+            "safety": {
+                "imgs": [
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667152716/suzuki/Jimny/safety1_fvpdrt.gif",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667152717/suzuki/Jimny/safety2_zk391m.gif",
+                    "https://res.cloudinary.com/debmbjvbh/image/upload/v1667152717/suzuki/Jimny/safety3_tu5eyd.gif"
+                   
+                ],
+                "text": {
+                    "title": "מערכות בטיחות מתקדמות",
+                    "content": "הג'ימני מצוידת במגוון טכנולוגיות לשיפור בטיחות הנהיגה הכוללות מערכת התרעה ובלימה אוטומטית והתראת סטייה מנתיב."
+                }
+            }
+        }
     }
 ]
+

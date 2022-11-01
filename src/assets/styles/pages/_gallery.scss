@@ -1,0 +1,16 @@
+.gallery-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    // flex-wrap: wrap;
+    align-items: center;
+    >*{
+        // width: 600px;
+        object-fit: cover;
+        max-width: 80%;
+    }
+
+   
+    }
+ 

@@ -22,10 +22,10 @@ export function CarListPage() {
                 </div>
             })}
 
-            <div className="car-preview-wrapper"> <CarPreview car={{ nameEN: "suzuki s-cross Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185701/suzuki/floating%20imgs/crossfloat2_lte29u.png" } }} /> </div>
+            {/* <div className="car-preview-wrapper"> <CarPreview car={{ nameEN: "suzuki s-cross Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185701/suzuki/floating%20imgs/crossfloat2_lte29u.png" } }} /> </div>
             <div className="car-preview-wrapper"> <CarPreview car={{ nameEN: "suzuki Vitara Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185697/suzuki/floating%20imgs/vitarafloat2_hotkqr.png" } }} /> </div>
             <div className="car-preview-wrapper"><CarPreview car={{ nameEN: "suzuki Ignis Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185689/suzuki/floating%20imgs/ignisfloat2_aogymb.png" } }} /> </div>
-            <div className="car-preview-wrapper"> <CarPreview car={{ nameEN: "suzuki Jimny Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185679/suzuki/floating%20imgs/jimnyfloat2_frqwib.png" } }} /> </div>
+            <div className="car-preview-wrapper"> <CarPreview car={{ nameEN: "suzuki Jimny Hybrid", imgs: { floatImg: "https://res.cloudinary.com/debmbjvbh/image/upload/v1665185679/suzuki/floating%20imgs/jimnyfloat2_frqwib.png" } }} /> </div> */}
         </section>
 
 
