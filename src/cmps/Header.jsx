@@ -12,13 +12,11 @@ import { useState } from 'react'
 export function Header() {
 
     const dispatch = useDispatch()
-    const { cars } = useSelector((state) => state.carModule)
     const [isOnHover, setIsOnHover] = useState(false)
     const navRef = useRef()
     const headerRef = useRef()
     const topHeaderRef = useRef()
     const hrRef = useRef()
-
 
     useEffect(() => {
         dispatch(loadCars())
@@ -33,15 +31,13 @@ export function Header() {
         if (window.pageYOffset === 0) onShowNav()
     }
 
-
-
     const onHideNav = () => {
-        navRef.current.classList.add('hide')
+        if(navRef.current) navRef.current.classList.add('hide')
         topHeaderRef.current.style.boxShadow = '0 -0.5px 4px 0px #a9aaaf'
     }
 
     const onShowNav = () => {
-        navRef.current.classList.remove('hide')
+        if (navRef.current) navRef.current.classList.remove('hide')
         topHeaderRef.current.style.boxShadow = 'none'
 
 
@@ -66,8 +62,8 @@ export function Header() {
 
 
     return (
-        <header className="header-container" ref={headerRef}>
-            <div onMouseLeave={onLeaveHandle} onMouseEnter={onEnterHandle} className="top-header" ref={topHeaderRef}>
+        <header onMouseLeave={onLeaveHandle} onMouseEnter={onEnterHandle} className="header-container" ref={headerRef}>
+            <div  className="top-header" ref={topHeaderRef}>
                 <Link className="main-logo" to="/"><img className="main-logo" src={suzukiLogo} alt="suzuki-logo" /></Link>
                 <Link className="link-title" to="/"><h1 className="title">סוזוקי עפולה</h1></Link>
                 <label className="main-search-label">חיפוש
@@ -83,12 +79,6 @@ export function Header() {
                     <Link to="/contact-us"><button className="contact-us">צור קשר</button></Link>
                 </nav>
             </div>
-
-            {/* <hr ref={hrRef2} /> */}
-
-            {/* <Link to="/">
-            <img className="main-logo" src="https://res.cloudinary.com/debmbjvbh/image/upload/v1663763939/suzuki/suzuki-logo_srs563.png" />
-            </Link> */}
 
         </header>
     )

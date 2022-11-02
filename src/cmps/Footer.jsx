@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import suzukiLogo from '../assets/img/suzuki-logo.png'
 export function Footer() {
 
@@ -20,17 +21,21 @@ export function Footer() {
         <section className="contact-us-footer">
             <header className="title">יצירת קשר</header>
             <div className="phone-container">
-                <i class="fa-solid fa-phone-volume"></i>
-                <span>04-6421771</span>
+                <a className="phone-link-footer" href="tel://+972509225509">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>04-6421771</span>
+                </a>
             </div>
             <div className="whatsapp-container">
-                <i class="fa-brands fa-whatsapp"></i>
-                <span>שוחח עם נציג</span>
+                <a className="whatsapp-link" href="https://wa.me/97246421771?text=%20אשמח %20לפרטים %20נוספים" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>שוחח עם נציג</span>
+                </a>
             </div>
-            <div className="go-to-form">
+            <Link className="go-to-form" to="/contact-us">
                 <i class="fa-solid fa-pen-to-square"></i>
                 <span>השארת פרטים</span>
-            </div>
+            </Link>
 
 
         </section>

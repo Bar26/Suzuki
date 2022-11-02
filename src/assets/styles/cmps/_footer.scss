@@ -38,13 +38,19 @@
         }
     }
 
+    .phone-link-footer , .whatsapp-link, .go-to-form {
+        text-decoration: none;
+        display: flex;
+        gap: 15px;
+    }
+
     .social-media {
-        gap:20px;
+        gap: 20px;
         .main-logo-footer {
             width: 80px;
             filter: brightness(0) invert(1);
         }
-        .icon-container{
+        .icon-container {
             display: flex;
         }
     }

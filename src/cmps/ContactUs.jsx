@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import { carService } from "../services/carService"
 import { clientService } from '../services/clientService'
 import { PopUpMsg } from "./PopUpMsg"
+import emailjs from '@emailjs/browser';
 
 export function ContactUs() {
     const { cars } = useSelector((state) => state.carModule)
@@ -26,6 +27,7 @@ export function ContactUs() {
 
     const onAddClient = (ev) => {
         ev.preventDefault()
+        sendEmail()
         if (!clientInfo.model) delete clientInfo.model
         if (!clientInfo.text) delete clientInfo.text
         clientService.addClient(clientInfo)
@@ -50,11 +52,40 @@ export function ContactUs() {
         }, 3000);
     }
 
+    const sendEmail = (ev) => {
+        // ev.preventDefault();
+        console.log('in sendmail');
 
-    return <section  className="contact-us-container" id="contact">
+        emailjs.sendForm('service_f4t86wb', 'template_8rgc6g1', formRef.current, 'dy8NqYv9v5dRtJDUI')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
+    var yourNumber = "0526278764"
+    var yourMessage = "hello"
+
+
+
+    function getLinkWhastapp(number, message) {
+        number = yourNumber
+        message = yourMessage.split(' ').join('%20')
+
+        return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
+    }
+
+    getLinkWhastapp()
+
+
+    return <section className="contact-us-container" id="contact">
         <header className="contact-us-header">
             <h1 className="contact-us-title">צור קשר</h1>
-            <span className="call-now">רוצים לדבר איתנו כבר עכשיו? חייגו 04-6421771</span>
+            <div className="call-now"  >
+                <span >רוצים לדבר איתנו כבר עכשיו? חייגו </span>
+                <a className="phone-link" href="tel://+972509225509">04-6421771</a>
+            </div>
         </header>
         <form ref={formRef} onSubmit={onAddClient} onChange={handleChange} className="contact-us-form">
 
@@ -76,6 +107,7 @@ export function ContactUs() {
         <div ref={popUpRef} className="pop-up-container">
             <PopUpMsg txt={'פנייתך נשלחה בהצלחה'} />
         </div>
+
 
     </section>
 }

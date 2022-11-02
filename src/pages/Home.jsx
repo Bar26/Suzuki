@@ -4,46 +4,22 @@ import { CarList } from "../cmps/CarList"
 import { ContactUs } from "../cmps/ContactUs"
 // import { Link } from "react-router-dom"s
 import { HashLink as Link } from 'react-router-hash-link';
+import { useDispatch, useSelector } from "react-redux";
+import { loadCars } from "../store/CarActions";
 
 
 export function Home() {
 
     let [imgNum, setImgNum] = useState(0)
     let intervalId = useRef()
+    const { cars } = useSelector((state) => state.carModule)
+    const imgsRef = useRef([])
+    let currImgIdx = 0
+    const dispatch = useDispatch()
 
-    // const imgs = [
-    //     "https://res.cloudinary.com/debmbjvbh/image/upload/v1664745148/suzuki/Cross/s_cross_2_z6etlo.jpg",
-    //     "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805687/suzuki/Vitara/vitara_3_oq226r.jpg",
-    //     "https://res.cloudinary.com/debmbjvbh/image/upload/v1664703407/suzuki/Jimny/jimny1_nxxtoc.webp",
-    //     "https://res.cloudinary.com/debmbjvbh/image/upload/v1663864224/suzuki/swift/swiftForDesign_thujpd.jpg",
-    //     "https://res.cloudinary.com/debmbjvbh/image/upload/v1664806897/suzuki/Ignis/7_rmzzsi.jpg"
-    // ]
 
-    const imgs = [
-        {
-            img: "https://res.cloudinary.com/debmbjvbh/image/upload/v1664745148/suzuki/Cross/s_cross_2_z6etlo.jpg",
-            a_r: "1920 / 1080"
-        },
-        {
-            img: "https://res.cloudinary.com/debmbjvbh/image/upload/v1664805687/suzuki/Vitara/vitara_3_oq226r.jpg",
-            a_r: "1918 / 1107"
-        },
-        {
-            img: "https://res.cloudinary.com/debmbjvbh/image/upload/v1664703407/suzuki/Jimny/jimny1_nxxtoc.webp",
-            a_r: "1226 / 622"
-        },
-        {
-            img: "https://res.cloudinary.com/debmbjvbh/image/upload/v1663864224/suzuki/swift/swiftForDesign_thujpd.jpg",
-            a_r: "1270 / 691"
-        },
-        {
-            img: "https://res.cloudinary.com/debmbjvbh/image/upload/v1664806897/suzuki/Ignis/7_rmzzsi.jpg",
-            a_r: "1270 / 691"
-        }
-    ]
     useEffect(() => {
         play()
-
         return () => {
             stopPlay()
         }
@@ -57,10 +33,10 @@ export function Home() {
 
     const play = () => {
         intervalId.current = setInterval(() => {
-            setImgNum((imgNum) => {
-                if (imgNum === imgs.length - 1) return 0
-                else return imgNum + 1
-            })
+            imgsRef.current[currImgIdx].style.opacity = 0
+            currImgIdx += 1
+            if (currImgIdx === imgsRef.current.length) currImgIdx = 0
+            imgsRef.current[currImgIdx].style.opacity = 1
         }, 5000)
     }
 
@@ -70,36 +46,37 @@ export function Home() {
     }
 
     const onChangeImg = (diff) => {
-        setImgNum((imgNum) => {
-            if (imgNum === imgs.length - 1 && diff) return 0
-            else if (imgNum === 0 && !diff) return imgs.length - 1
-            else return imgNum + diff
-        })
+        imgsRef.current[currImgIdx].style.opacity = 0
+        currImgIdx += diff
+        if (currImgIdx === imgsRef.current.length) currImgIdx = 0
+        if (currImgIdx === -1) currImgIdx = imgsRef.current.length - 1
+        imgsRef.current[currImgIdx].style.opacity = 1
 
         stopPlay()
         play()
+    }
+
+    const addToRefs = (el) => {
+        if (el && !imgsRef.current.includes(el))
+            imgsRef.current.push(el)
     }
 
 
 
 
 
-
+    if(!cars.length) return <h1>loading</h1>
     return <section className="home">
         <div className="img-container">
-            {/* <img className="background-img" src={imgs[imgNum]} />
-                <img className="inner-img" src={imgs[imgNum]} /> */}
-            {/* <div className="background-img" style={{ backgroundImage: `URL(https://res.cloudinary.com/debmbjvbh/image/upload/v1664745148/suzuki/Cross/s_cross_2_z6etlo.jpg) `, aspectRatio: "1920 / 1080" }}> */}
-            {/* <div className="background-img" style={{ backgroundImage: `URL(${imgs[imgNum].img}) `, aspectRatio: imgs[imgNum].a_r }}> */}
-            {/* <div className="background-img" style={{ backgroundImage: `URL(${imgs[imgNum].img}) `, aspectRatio: imgs[imgNum].a_r }}>
-
-            </div> */}
-            <div className="inner-img" style={{ backgroundImage: `URL(${imgs[imgNum].img}) `, aspectRatio: imgs[imgNum].a_r }}>
-                <div className="call-to-action-btns">
-                    <Link className="more-info" to="/cars"> <button className="more-info">לפרטים נוספים</button></Link>
-                    <Link to="#contactId"><button className="contact-us">תחזרו אליי</button></Link>
+            {cars.map(car => {
+                return <div ref={addToRefs} className="inner-img" style={{ backgroundImage: `URL(${car.imgs.homeImg}) `, aspectRatio: "2560 / 1440" }}>
+                    <div className="call-to-action-btns">
+                        <Link className="more-info" to={`/car/${car._id}`}> <button className="more-info">לפרטים נוספים</button></Link>
+                        <Link to="#contactId"><button className="contact-us">תחזרו אליי</button></Link>
+                    </div>
                 </div>
-            </div>
+            })}
+
             <span className="arrow-right" onClick={() => onChangeImg(1)}><i class="fa-solid fa-angle-right"></i></span>
             <span className="arrow-left" onClick={() => onChangeImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
             <button className="toggle-play" onClick={OnTogglePlay}>
