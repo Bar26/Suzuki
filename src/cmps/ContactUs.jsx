@@ -1,13 +1,15 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { useSelector } from "react-redux"
 import { carService } from "../services/carService"
 import { clientService } from '../services/clientService'
 import { PopUpMsg } from "./PopUpMsg"
 import emailjs from '@emailjs/browser';
+import { useLocation } from "react-router-dom"
 
 export function ContactUs() {
     const { cars } = useSelector((state) => state.carModule)
     const formRef = useRef()
+    const location = useLocation()
     const [clientInfo, setClientInfo] = useState({
         firstName: "",
         lastName: "",
@@ -18,6 +20,12 @@ export function ContactUs() {
     })
     const [isShowMsg, setIsShowMsg] = useState(false)
     const popUpRef = useRef()
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     const handleChange = (ev) => {
         let field = ev.target.name
@@ -53,9 +61,6 @@ export function ContactUs() {
     }
 
     const sendEmail = (ev) => {
-        // ev.preventDefault();
-        console.log('in sendmail');
-
         emailjs.sendForm('service_f4t86wb', 'template_8rgc6g1', formRef.current, 'dy8NqYv9v5dRtJDUI')
             .then((result) => {
                 console.log(result.text);
@@ -64,28 +69,13 @@ export function ContactUs() {
             });
     }
 
-    var yourNumber = "0526278764"
-    var yourMessage = "hello"
-
-
-
-    function getLinkWhastapp(number, message) {
-        number = yourNumber
-        message = yourMessage.split(' ').join('%20')
-
-        return console.log('https://api.whatsapp.com/send?phone=' + number + '&text=%20' + message)
-    }
-
-    getLinkWhastapp()
-
-
     return <section className="contact-us-container" id="contact">
         <header className="contact-us-header">
             <h1 className="contact-us-title">צור קשר</h1>
-            <div className="call-now"  >
+            {location.pathname !== '/contact-us' && <div className="call-now"  >
                 <span >רוצים לדבר איתנו כבר עכשיו? חייגו </span>
                 <a className="phone-link" href="tel://+972509225509">04-6421771</a>
-            </div>
+            </div>}
         </header>
         <form ref={formRef} onSubmit={onAddClient} onChange={handleChange} className="contact-us-form">
 

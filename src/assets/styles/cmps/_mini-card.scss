@@ -10,3 +10,9 @@
         @include mini-card;
     }
 }
+
+@include for-tablet-layout{
+    .mini-cards-container{
+        grid-template-columns: auto;
+    }
+}

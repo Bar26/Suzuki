@@ -37,7 +37,6 @@
             justify-content: space-between;
 
             .go-to-fund-calc {
-                // background-color: #f6f3f2;
                 background-color: transparent;
                 text-decoration: solid;
                 color: $clr-suzuki-blue;
@@ -56,21 +55,39 @@
             height: 40px;
         }
 
-        .inside-link {
-            align-self: center;
-            width: 200px;
-            .go-to-contact-us {
-                width: 100%;
-            }
-        }
-
-        .phone-us {
-            background-color: $clr-background;
-            width: 200px;
-            align-self: center;
-            margin-inline-end: 5px;
+        .call-to-action-btns {
+            display: flex;
             gap: 5px;
-            @include flex-center;
+            .inside-link {
+                align-self: center;
+                width: 200px;
+                text-decoration: none;
+                .go-to-contact-us {
+                    @include flex-center;
+                    gap: 6px;
+                    width: 100%;
+                    span {
+                        color: white;
+                    }
+                    svg {
+                        > * {
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .phone-link {
+                background-color: $clr-background;
+                align-self: center;
+                width: 200px;
+                text-decoration: none;
+                .phone-us {
+                    @include flex-center;
+                    gap: 5px;
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -98,16 +115,7 @@
         }
 
         .safety {
-            text-align: center;
-            .title {
-                font-size: rem(40px);
-                font-weight: bold;
-                margin-bottom: em(20px, 40px);
-            }
-            .content {
-                font-size: rem(24px);
-                margin-bottom: em(25px, 24px);
-            }
+            @include big-card;
 
             .safety-imgs-container {
                 position: relative;
@@ -152,5 +160,174 @@
 
     .last-hr {
         margin: 60px 0;
+    }
+}
+
+
+//MQ
+
+@include for-big-screen{
+    .car-details-container{
+        .info-imgs-container{
+            padding: 40px 150px;
+        }
+    }
+}
+
+@include for-wide-layout {
+    .car-details-container {
+        .info-imgs-container{
+            padding: 40px 100px;
+
+        }
+        .car-actions {
+            padding-inline: 0;
+            .price-container {
+                margin-inline-end: 2em;
+            }
+            .phone-us,
+            .inside-link {
+                width: 170px;
+            }
+        }
+    }
+}
+
+@include for-regular-layout {
+    .car-details-container {
+        .info-imgs-container{
+            padding: 40px 50px;
+
+        }
+        .car-actions {
+            padding-inline: 0;
+            .price-container {
+                .p-one {
+                    font-size: rem(20px);
+                }
+                .p-two {
+                    font-size: rem(36px);
+                }
+                .p-three {
+                    font-size: rem(14px);
+                }
+            }
+            .fund-options {
+                font-size: rem(20px);
+                .go-to-fund-calc {
+                    font-size: rem(20px);
+                }
+            }
+            .call-to-action-btns {
+                flex-direction: column;
+                .inside-link {
+                    width: 160px;
+                }
+                .phone-link {
+                    width: 160px;
+                }
+            }
+        }
+    }
+}
+
+@include for-tablet-layout {
+    .car-details-container {
+        padding: 0 0 70px 0;
+
+        .info-imgs-container{
+            video{
+                width: 100%;
+            }
+        }
+
+        .car-actions {
+            // padding-inline: 20px;
+
+            .price-container {
+                .p-one {
+                    font-size: rem(18px);
+                }
+                .p-two {
+                    font-size: rem(28px);
+                }
+                .p-three {
+                    // font-size: rem(14px);
+                }
+            }
+            .fund-options {
+                font-size: rem(18px);
+                .go-to-fund-calc {
+                    font-size: rem(18px);
+                }
+            }
+            .call-to-action-btns {
+                flex-direction: column;
+                .inside-link {
+                    width: 150px;
+                    >*{
+
+                        font-size: rem(16px);
+                    }
+                }
+                .phone-link {
+                    >*{
+                        font-size: rem(16px);
+
+                    }
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .car-details-container {
+        .info-imgs-container{
+            padding: 40px 10px;
+        }
+        .car-actions {
+            padding-inline: 10px;
+            gap:5px;
+            .price-container{
+                .p-three{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .call-to-action-btns {
+                .inside-link {
+                    width: 45px;
+                    height: 45px;
+                    .go-to-contact-us {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100px;
+    
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+    
+                .phone-link {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 100px;
+                    .phone-us {
+                        margin-top: 1px;
+                        span {
+                            display: none;
+                        }
+                        svg {
+                            > * {
+                                // color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

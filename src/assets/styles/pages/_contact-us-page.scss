@@ -1,17 +1,131 @@
-.contact-us-page-container{
+.contact-us-page-container {
     display: flex;
-    justify-content: center;
-    padding: 30px;
-
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
     width: 100%;
+    padding: 0 10px 60px;
 
-    img{
-        width: 50%;
-        max-height: 400px;
-        object-fit: cover;
+    .contact-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        .title {
+            font-size: rem(26px);
+        }
+        .content {
+            font-weight: unset;
+            font-size: rem(24px);
+        }
     }
 
-    .contact-us-container{
-        width: 50%;
+    .contact-form-wrapper {
+        background-color: $clr-background;
+        width: 910px;
+        margin-top: 120px;
+        padding-top: 60px;
+        position: relative;
+        .contact-opt {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            position: absolute;
+            top: -120px;
+            left: 50%;
+            transform: translate(-50%);
+            > * {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                border: 1px solid rgba(9, 30, 66, 0.1294117647);
+                width: 200px;
+                height: 150px;
+                font-size: rem(18px);
+                text-align: center;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    > * {
+                        color: #54b435;
+                        font-size: rem(24px);
+                    }
+                }
+
+                &.adress-opt {
+                    svg {
+                        > * {
+                            color: #ff1e00;
+                        }
+                    }
+                }
+
+                &.phone-opt {
+                    svg {
+                        > * {
+                            color: $clr-suzuki-blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-us-container {
+            .btn-submit {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@include for-regular-layout {
+    .contact-us-page-container {
+        .contact-form-wrapper {
+            width: 720px;
+        }
+    }
+}
+
+@include for-tablet-layout {
+    .contact-us-page-container {
+        .contact-form-wrapper {
+            width: 100%;
+            margin-top: 85px;
+
+            .contact-opt {
+                gap: 15px;
+                top: -85px;
+                > * {
+                    gap: 10px;
+                    width: 160px;
+                    height: 110px;
+                    font-size: rem(18px);
+                }
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .contact-us-page-container {
+        .contact-form-wrapper {
+            padding-top: 50px;
+            background-color: transparent;
+            .contact-opt {
+                gap: 30px;
+                > * {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100px;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

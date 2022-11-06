@@ -5,16 +5,21 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
-    // margin-top: 40px;
+
+
+
+   
 
     .car-list-img {
         width: 100%;
         margin-bottom: 60px;
+     
     }
     .title {
         font-size: rem(40px);
         font-weight: bold;
         margin-bottom: 10px;
+        text-align: center;
     }
     .cars-container {
         display: grid;
@@ -27,11 +32,11 @@
                 border-left: 1px solid rgba(9, 30, 66, 0.1294117647);
             }
         }
-        
-        :last-child {                            /////////////change if another model comes!!!!!!!!
+
+        :last-child {
+            /////////////change if another model comes!!!!!!!!
             grid-column: 1/-1;
             justify-self: center;
-            // border-bottom: none !important;
             .car-preview {
                 border: none;
             }
@@ -51,7 +56,53 @@
         }
     }
 
-    video{
+    video {
         width: 70%;
+    }
+}
+
+@include for-regular-layout {
+    .car-list-container {
+        .title{
+            font-size: rem(34px);
+        }
+        .cars-container {
+            grid-template-columns: 1fr;
+        
+                :nth-child(odd) {
+                    .car-preview {
+                        border-left:none
+                    }
+                }
+                
+                .right{
+                    .car-name{
+                        font-size: rem(32px);
+                    }
+                }
+        }
+    }
+}
+
+@include for-tablet-layout{
+    .car-list-container{
+        padding: 0;
+    }
+}
+
+@include for-mobile-layout{
+    .car-list-container{
+        .title{
+            font-size: rem(32px);
+        }
+        .car-list-img{
+            margin-bottom: 40px;
+        }
+
+        .cars-container{
+            .car-preview-wrapper{
+                padding: 10px 0;
+            }
+        }
     }
 }

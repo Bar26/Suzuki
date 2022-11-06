@@ -2,25 +2,22 @@
     width: 100%;
     font-size: rem(20px);
     background-color: white;
-    // background-color: transparent;
     height: 50px;
-    // border: 1px solid gray;
     padding: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     height: 60px;
-    // position: absolute;
-    // bottom: 0;
-    // transform: translateY(100%);
+
+    position: absolute;
+    bottom:0;
+    transform: translateY(100%);
 
     .safety {
         display: flex;
         gap:3px;
         align-items: center;
 
-        .safety-title {
-        }
         .safety-info {
             width: 25px;
             height: 25px;
@@ -50,4 +47,38 @@
     }
 }
     
+}
+
+//MQ
+
+@include for-tablet-layout{
+    .safety-details{
+        font-size: rem(18px);
+    }
+}
+
+@include for-narrow-layout{
+    .safety-details{
+        font-size: 1rem;
+    }
+}
+
+@include for-mobile-layout{
+    .safety-details{
+        height: 50px;
+        font-size: rem(14px);
+        .safety{
+            .safety-info{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .pollution{
+            .pollution-info{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }

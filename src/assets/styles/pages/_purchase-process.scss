@@ -5,6 +5,13 @@
     align-items: center;
     padding: 50px 350px 70px;
 
+    a{
+        text-decoration: underline $clr-suzuki-blue;
+        &:active{
+            color: $clr-suzuki-blue
+        }
+    }
+
     img {
         width: 100%;
         object-fit: cover;
@@ -41,4 +48,35 @@
             }
         }
     }
+}
+
+@include for-big-screen{
+    .purchase-process-container {
+        padding: 50px 200px 70px;
+    }
+    
+}
+@include for-wide-layout{
+    .purchase-process-container {
+        padding: 50px 150px 70px;
+    }
+
+}
+@include for-regular-layout{
+    .purchase-process-container {
+        padding: 50px 100px 70px;
+    }
+}
+@include for-tablet-layout{
+    .purchase-process-container {
+        padding: 50px 50px 70px;
+    }
+}
+@include for-narrow-layout{
+    .purchase-process-container {
+        padding: 50px 10px 70px;
+    }
+}
+@include for-mobile-layout{
+
 }

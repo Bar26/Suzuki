@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 70px;
-    gap:60px;
+    gap: 60px;
 
     .img-container {
         position: relative;
@@ -12,22 +12,16 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-       
+
         .inner-img {
             width: 100%;
-            // z-index: -5;
             max-height: 650px;
-            // position: absolute;
             position: relative;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-
-            // transition: background-image 0.5s ease-in-out;
-
-            // width: 100%;
-            // object-fit: cover;
             transition: 0.6s ease-in-out;
+            margin-bottom: 60px;
 
             &:not(:first-child) {
                 opacity: 0;
@@ -45,13 +39,15 @@
                 display: flex;
                 gap: 15px;
                 > * {
-                    >*{
-                         padding:3px 6px;
-                    width: 240px;
-                    height: 50px;
-                    font-size: rem(30px);
+                    text-decoration: none;
+
+                    > * {
+                        padding: 3px 6px;
+                        width: 240px;
+                        height: 50px;
+                        font-size: rem(30px);
+                        @include flex-center;
                     }
-                   
                 }
 
                 .more-info {
@@ -61,12 +57,10 @@
                 }
 
                 .contact-us {
-                    // background-color: white;
-                    background-color: $clr-background;
+                    background-color: $clr-suzuki-blue;
+                    color: white;
                 }
             }
-
-       
         }
 
         .arrow-right {
@@ -76,13 +70,12 @@
             top: 50%;
             cursor: pointer;
             transform: translateY(-50%);
-          
-          >*{
-            >*{
-                color:$clr-background;
+
+            > * {
+                > * {
+                    color: $clr-background;
+                }
             }
-          }
-           
         }
 
         .arrow-left {
@@ -91,23 +84,113 @@
             left: 2.5%;
             top: 50%;
             transform: translateY(-50%);
-            >*{
-                >*{
-                    color:$clr-background;
+            cursor: pointer;
+
+            > * {
+                > * {
+                    color: $clr-background;
                 }
-              }
+            }
         }
 
         .toggle-play {
             position: absolute;
             bottom: 0;
             left: 2.5%;
-            height: 50px;
+            height: 60px;
             @include flex-center;
             font-size: rem(18px);
             display: flex;
-            gap:5px;
+            gap: 5px;
 
+            .pause, .play{
+                &.hide{
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+@include for-tablet-layout {
+    .home {
+        padding: 0 30px;
+        .img-container {
+            .inner-img {
+                .call-to-action-btns {
+                    > * {
+                        > * {
+                            width: 200px;
+                            height: 40px;
+                            font-size: rem(24px);
+                        }
+                    }
+                }
+                .arrow-right,
+                .arrow-left {
+                    font-size: rem(40px);
+                }
+            }
+            .toggle-play {
+                font-size: rem(18px);
+            }
+        }
+    }
+}
+
+@include for-narrow-layout {
+    .home {
+        padding: 0;
+        .img-container {
+            .inner-img {
+                .call-to-action-btns {
+                    gap: 10px;
+                    bottom: 10px;
+                    > * {
+                        > * {
+                            width: 170px;
+                            height: 35px;
+                            font-size: rem(20px);
+                        }
+                    }
+                }
+            }
+            .toggle-play {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .home {
+        gap:40px;
+        .title{
+            margin: 0;
+        }
+        .img-container {
+            .inner-img {
+                margin-bottom: 50px;
+                .call-to-action-btns {
+                    > * {
+                        > * {
+                            // @include flex-center;
+                            width: 150px;
+                            height: 30px;
+                            font-size: rem(20px);
+                        }
+                    }
+                }
+                .arrow-right,
+                .arrow-left {
+                    font-size: rem(40px);
+                }
+            }
+            .toggle-play {
+                font-size: rem(14px);
+                height: 50px;
+            }
         }
     }
 }

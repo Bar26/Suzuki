@@ -6,7 +6,7 @@ import { CarListPage } from './pages/CarListPage'
 import { CarDetails } from './pages/CarDetails'
 import { PurchaseProcess } from './pages/PurchaseProcess'
 import { ContactUsPage } from './pages/ContactUsPage'
-import { Gallery } from './pages/Gallery'
+import { Gallery, MyGallery } from './pages/Gallery'
 
 function App() {
 

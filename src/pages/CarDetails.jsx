@@ -1,11 +1,10 @@
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { loadCars, setCurrCar } from '../store/CarActions'
 import { BigCards } from "../cmps/BigCards";
 import { MiniCards } from "../cmps/MiniCards";
 import { ContactUs } from "../cmps/ContactUs"
-import { useEffectUpdate } from "../cmps/useEffectUpdate";
 import swiftTech from '../assets/files/swiftTech.pdf'
 import swiftCatalog from '../assets/files/swiftCatalog.pdf'
 import crossTech from '../assets/files/crossTech.pdf'
@@ -15,15 +14,14 @@ import ignisCatalog from '../assets/files/ignisCatalog.pdf'
 import vitaraTech from '../assets/files/vitaraTech.pdf'
 import vitaraCatalog from '../assets/files/vitaraCatalog.pdf'
 import jimnyTech from '../assets/files/jimnyTech.pdf'
-
 import { HashLink as Link } from 'react-router-hash-link';
 import { SafetyIcons } from "../cmps/SafetyIcons";
+import { Loader } from "../cmps/Loader";
 
 
 
 export function CarDetails() {
     const { currCar } = useSelector((state) => state.carModule)
-    const { cars } = useSelector((state) => state.carModule)
     const { carId } = useParams()
     const dispatch = useDispatch()
     const safetyRefs = useRef([])
@@ -69,8 +67,7 @@ export function CarDetails() {
 
 
 
-    if (!Object.keys(currCar).length) return
-    // if (!Object.keys(currCar || {}).length) return
+    if (!Object.keys(currCar).length) return <Loader/>
     return <section className="car-details-container">
         <img className="main-img" src={currCar.imgs.mainImg} alt="suzuki" />
 
@@ -78,7 +75,9 @@ export function CarDetails() {
             <div className="price-container">
                 <span className="p-one"> החל מ - </span>
                 <span className="p-two">{currCar.price} ₪</span>
-                <span className="p-three">בתוספת אגרת רישוי בסך <span>{currCar.licensing} ₪</span></span>
+                <span className="p-three">
+                    <span>תוספת אגרת רישוי  </span>
+                    <span className="price">בסך {currCar.licensing} ₪ </span></span>
             </div>
             <div className="fund-options">
                 <span>עד 100% מימון ועד 60 תשלומים</span>
@@ -87,13 +86,24 @@ export function CarDetails() {
                     למחשבון מימון
                 </button>
             </div>
-            <button className="phone-us">
-                <i class="fa-solid fa-phone-volume"></i>
-                <span>שיחה עם נציג</span>
-            </button>
-            <Link className="inside-link" to="#contactId"><button className="go-to-contact-us btn">
-                לתיאום פגישה
-            </button></Link>
+            <div className="call-to-action-btns">
+
+                <a className="phone-link" href="tel://+972509225509">
+                    <button className="phone-us">
+
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>
+                            שיחה עם נציג
+                        </span>
+                    </button>
+                </a>
+
+                <Link className="inside-link" to="#contactId">
+                    <button className="go-to-contact-us btn">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>לתיאום פגישה</span>
+                    </button></Link>
+            </div>
 
         </section>
 

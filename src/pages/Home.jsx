@@ -1,25 +1,27 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { CarSafetyDetails } from "../cmps/CarSafetyDetails"
 import { CarList } from "../cmps/CarList"
 import { ContactUs } from "../cmps/ContactUs"
-// import { Link } from "react-router-dom"s
 import { HashLink as Link } from 'react-router-hash-link';
-import { useDispatch, useSelector } from "react-redux";
-import { loadCars } from "../store/CarActions";
+import { useSelector } from "react-redux";
+import { Loader } from "../cmps/Loader"
+import { Magnify } from "../cmps/magnify";
+
 
 
 export function Home() {
 
-    let [imgNum, setImgNum] = useState(0)
     let intervalId = useRef()
     const { cars } = useSelector((state) => state.carModule)
     const imgsRef = useRef([])
     let currImgIdx = 0
-    const dispatch = useDispatch()
+    const playRef = useRef()
+    const pauseRef = useRef()
 
 
     useEffect(() => {
         play()
+        window.scrollTo(0, 0)
         return () => {
             stopPlay()
         }
@@ -28,6 +30,8 @@ export function Home() {
     const OnTogglePlay = () => {
         if (intervalId.current) stopPlay()
         else play()
+        playRef.current.classList.toggle('hide')
+        pauseRef.current.classList.toggle('hide')
 
     }
 
@@ -65,25 +69,26 @@ export function Home() {
 
 
 
-    if(!cars.length) return <h1>loading</h1>
+    if (!cars.length) return <Loader/>
     return <section className="home">
         <div className="img-container">
             {cars.map(car => {
                 return <div ref={addToRefs} className="inner-img" style={{ backgroundImage: `URL(${car.imgs.homeImg}) `, aspectRatio: "2560 / 1440" }}>
                     <div className="call-to-action-btns">
-                        <Link className="more-info" to={`/car/${car._id}`}> <button className="more-info">לפרטים נוספים</button></Link>
+                        <Link className="more-info" to={`/cars/${car._id}`}> <button className="more-info">לפרטים נוספים</button></Link>
                         <Link to="#contactId"><button className="contact-us">תחזרו אליי</button></Link>
                     </div>
+                    <span className="arrow-right" onClick={() => onChangeImg(1)}><i class="fa-solid fa-angle-right"></i></span>
+                    <span className="arrow-left" onClick={() => onChangeImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
+                    <CarSafetyDetails safety={car.safety} pollution={car.pollution} />
                 </div>
             })}
 
-            <span className="arrow-right" onClick={() => onChangeImg(1)}><i class="fa-solid fa-angle-right"></i></span>
-            <span className="arrow-left" onClick={() => onChangeImg(-1)}><i class="fa-solid fa-angle-left"></i></span>
             <button className="toggle-play" onClick={OnTogglePlay}>
                 <span>עצור ניגון</span>
-                <i class="fa-solid fa-pause"></i>
+                <span ref={pauseRef} className="pause"><i class="fa-solid fa-pause"></i></span>
+                <span ref={playRef} className="play hide"><i class="fa-solid fa-play"></i></span>
             </button>
-            <CarSafetyDetails />
             <hr />
         </div>
 
@@ -93,6 +98,9 @@ export function Home() {
         <div id="contactId">
             <ContactUs />
         </div>
+
+        {/* <Magnify/> */}
+
 
 
 
