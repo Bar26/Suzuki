@@ -5,7 +5,6 @@ import { ContactUs } from "../cmps/ContactUs"
 import { HashLink as Link } from 'react-router-hash-link';
 import { useSelector } from "react-redux";
 import { Loader } from "../cmps/Loader"
-import { Magnify } from "../cmps/magnify";
 
 
 
@@ -99,7 +98,6 @@ export function Home() {
             <ContactUs />
         </div>
 
-        {/* <Magnify/> */}
 
 
 
