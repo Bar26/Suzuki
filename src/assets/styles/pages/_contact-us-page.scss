@@ -36,38 +36,42 @@
             left: 50%;
             transform: translate(-50%);
             > * {
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                border: 1px solid rgba(9, 30, 66, 0.1294117647);
-                width: 200px;
-                height: 150px;
-                font-size: rem(18px);
-                text-align: center;
-                svg {
-                    width: 30px;
-                    height: 30px;
-                    > * {
-                        color: #54b435;
-                        font-size: rem(24px);
-                    }
-                }
+                text-decoration: none;
+                > * {
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border: 1px solid rgba(9, 30, 66, 0.1294117647);
+                    width: 200px;
+                    height: 150px;
+                    font-size: rem(18px);
+                    text-align: center;
 
-                &.adress-opt {
                     svg {
+                        width: 30px;
+                        height: 30px;
                         > * {
-                            color: #ff1e00;
+                            color: #54b435;
+                            font-size: rem(24px);
                         }
                     }
-                }
 
-                &.phone-opt {
-                    svg {
-                        > * {
-                            color: $clr-suzuki-blue;
+                    &.adress-opt {
+                        svg {
+                            > * {
+                                color: #ff1e00;
+                            }
+                        }
+                    }
+
+                    &.phone-opt {
+                        svg {
+                            > * {
+                                color: $clr-suzuki-blue;
+                            }
                         }
                     }
                 }
@@ -97,13 +101,15 @@
             margin-top: 85px;
 
             .contact-opt {
-                gap: 15px;
                 top: -85px;
                 > * {
-                    gap: 10px;
-                    width: 160px;
-                    height: 110px;
-                    font-size: rem(18px);
+                    gap: 15px;
+                    > * {
+                        gap: 10px;
+                        width: 160px;
+                        height: 110px;
+                        font-size: rem(18px);
+                    }
                 }
             }
         }
@@ -116,13 +122,15 @@
             padding-top: 50px;
             background-color: transparent;
             .contact-opt {
-                gap: 30px;
                 > * {
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 100px;
-                    span {
-                        display: none;
+                    gap: 30px;
+                    > * {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 100px;
+                        span {
+                            display: none;
+                        }
                     }
                 }
             }

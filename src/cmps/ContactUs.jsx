@@ -74,7 +74,7 @@ export function ContactUs() {
             <h1 className="contact-us-title">צור קשר</h1>
             {location.pathname !== '/contact-us' && <div className="call-now"  >
                 <span >רוצים לדבר איתנו כבר עכשיו? חייגו </span>
-                <a className="phone-link" href="tel://+972509225509">04-6421771</a>
+                <a className="phone-link" href="tel://+97246421771">04-6421771</a>
             </div>}
         </header>
         <form ref={formRef} onSubmit={onAddClient} onChange={handleChange} className="contact-us-form">
@@ -83,7 +83,7 @@ export function ContactUs() {
             <input name="lastName" className="last-name" type="text" placeholder="*שם משפחה" required />
             <input name="email" id="1" className="mail" type="email" placeholder="*אימייל" required />
             <input name="phone" className="phone" type="tel" placeholder="*טלפון (055-5555555)" required
-                pattern="[0-9]{3}-[0-9]{7}" />
+                pattern="[0-9]{10}" />
             <select name="model" className="model" placeholder="דגם">
                 <option value="null">דגם</option>
                 {cars.map(car => <option value={car.name}>{car.name}</option>)}

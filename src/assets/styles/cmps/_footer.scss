@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    flex-wrap: wrap;
 
     svg {
         > * {
@@ -38,7 +39,9 @@
         }
     }
 
-    .phone-link-footer , .whatsapp-link, .go-to-form {
+    .phone-link-footer,
+    .whatsapp-link,
+    .go-to-form {
         text-decoration: none;
         display: flex;
         gap: 15px;
@@ -52,6 +55,19 @@
         }
         .icon-container {
             display: flex;
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .main-footer {
+        .social-media {
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            .main-logo-footer {
+                width: 50px;
+            }
         }
     }
 }

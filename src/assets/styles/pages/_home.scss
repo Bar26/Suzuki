@@ -113,6 +113,18 @@
     }
 }
 
+//MQ
+
+@include for-big-screen{
+    .home{
+        .img-container{
+            .inner-img{
+                max-height: 400px;
+            }
+        }
+    }
+}
+
 @include for-tablet-layout {
     .home {
         padding: 0 30px;

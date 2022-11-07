@@ -4,9 +4,9 @@ export function Footer() {
 
 
     return <footer className="main-footer">
-
+        
         <section className="general">
-            <header className="title">סוזוקי עפולה</header>
+            <header className="title" >סוזוקי עפולה - סוכנות רכב מורשית</header>
             <div className="address-container">
                 <i className="fa-solid fa-location-dot"></i>
                 <span>עפולה, רח' המלאכה 28</span>

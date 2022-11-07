@@ -82,9 +82,9 @@ export function CarDetails() {
             <div className="fund-options">
                 <span>עד 100% מימון ועד 60 תשלומים</span>
                 <span>(כולל אפשרות לפרעון 50% בסוף תקופה)</span>
-                <button className="go-to-fund-calc">
+                {/* <button className="go-to-fund-calc">
                     למחשבון מימון
-                </button>
+                </button> */}
             </div>
             <div className="call-to-action-btns">
 
