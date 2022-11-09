@@ -181,24 +181,22 @@
                 position: absolute;
                 width: 230px;
                 right: 40px;
-                top:-30px;
-
+                top: -30px;
             }
 
             .close-float-car-actions {
                 position: absolute;
                 right: 10px;
-                top:10px;
-                svg{
+                top: 10px;
+                svg {
                     width: 25px;
                     height: 25px;
                     cursor: pointer;
-                    >*{
-                        color:$clr-background;
-                        &:hover{
+                    > * {
+                        color: $clr-background;
+                        &:hover {
                             color: $clr-suzuki-blue;
                         }
-                    
                     }
                 }
             }
@@ -226,6 +224,13 @@
 
 @include for-big-screen {
     .car-details-container {
+        .main-img {
+            max-height: 350px;
+        }
+
+        .car-actions {
+            padding: 5px 20px;
+        }
         .info-imgs-container {
             padding: 40px 150px;
         }
@@ -247,11 +252,11 @@
                 width: 170px;
             }
         }
-        .car-actions-float-container{
-            .car-actions{
-                gap:5px;
+        .car-actions-float-container {
+            .car-actions {
+                gap: 5px;
                 padding-inline-start: 220px;
-                .mini-float-img{
+                .mini-float-img {
                     width: 180px;
                 }
             }
@@ -293,8 +298,6 @@
                 }
             }
         }
-
-        
     }
 }
 
@@ -345,16 +348,16 @@
             }
         }
 
-        .car-actions-float-container{
-            .car-actions{
-                gap:0;
+        .car-actions-float-container {
+            .car-actions {
+                gap: 0;
                 padding-inline-start: 190px;
-                .mini-float-img{
+                .mini-float-img {
                     width: 150px;
-                    top:-20px;
+                    top: -20px;
                 }
                 .price-container {
-                margin:0;
+                    margin: 0;
 
                     .p-one {
                         font-size: rem(18px);
@@ -377,7 +380,7 @@
                             width: 100%;
                             height: 100%;
                             border-radius: 100px;
-    
+
                             span {
                                 display: none;
                             }
@@ -400,9 +403,9 @@
     }
 }
 
-@include for-narrow-layout{
-    .car-details-container{
-        .car-actions-float-container{
+@include for-narrow-layout {
+    .car-details-container {
+        .car-actions-float-container {
             display: none;
         }
     }
@@ -447,7 +450,6 @@
                             display: none;
                         }
                         svg {
-                          
                             > * {
                                 // color:white;
                             }
