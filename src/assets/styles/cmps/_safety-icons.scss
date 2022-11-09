@@ -28,7 +28,8 @@
             display: flex;
             align-items: center;
             gap: 15px;
-            width: 450px;
+            // width: 450px;
+            width:calc(50% - 10px) ;
             gap:1fr;
             border: 1px solid;
             border: 1px solid rgba(9, 30, 66, 0.1294117647);
@@ -44,4 +45,20 @@
             }
         }
     }
+}
+
+@include for-narrow-layout{
+    .safety-icons-container{
+        .safety-grid{
+            .safety-icon{
+                width: 100%;
+                .icon{
+                    height: 50px;
+                    width: 50px;
+                }
+               
+            }
+        }
+    }
+
 }

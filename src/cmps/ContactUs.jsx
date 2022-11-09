@@ -16,9 +16,9 @@ export function ContactUs() {
         email: "",
         phone: "",
         model: "",
-        text: ""
+        text: "",
+        userConsent:""
     })
-    const [isShowMsg, setIsShowMsg] = useState(false)
     const popUpRef = useRef()
 
 
@@ -30,6 +30,7 @@ export function ContactUs() {
     const handleChange = (ev) => {
         let field = ev.target.name
         let value = ev.target.value
+        if (ev.target.type === "checkbox") value = ev.target.checked
         setClientInfo({ ...clientInfo, [field]: value })
     }
 
@@ -45,12 +46,12 @@ export function ContactUs() {
             email: "",
             phone: "",
             model: "",
-            text: ""
+            text: "",
+            userConsent:""
         })
         formRef.current.reset()
         showMsg()
 
-        //TO-DO - ADD NOTIFICATION- SUCCESS
     }
 
     const showMsg = () => {
@@ -82,13 +83,17 @@ export function ContactUs() {
             <input name="firstName" className="first-name" type="text" placeholder="*שם פרטי" required />
             <input name="lastName" className="last-name" type="text" placeholder="*שם משפחה" required />
             <input name="email" id="1" className="mail" type="email" placeholder="*אימייל" required />
-            <input name="phone" className="phone" type="tel" placeholder="*טלפון (055-5555555)" required
+            <input name="phone" className="phone" type="tel" placeholder="*טלפון (0555555555)" required
                 pattern="[0-9]{10}" />
             <select name="model" className="model" placeholder="דגם">
                 <option value="null">דגם</option>
                 {cars.map(car => <option value={car.name}>{car.name}</option>)}
             </select>
             <textarea name="text" className="message" placeholder="תרצו להוסיף הודעה?" />
+            <label className="mail-validate-label">
+                <input className="mail-validate" type="checkbox" name="userConsent" defaultChecked="true" />
+                <span>מאשר\ת קבלת פניות שיווקיות, מידע על מבצעים והטבות לרבות דרך דוא"ל\ ווטסאפ</span>
+            </label>
             <button className="btn btn-submit">
                 שלחו ונחזור אליך בהקדם
             </button>

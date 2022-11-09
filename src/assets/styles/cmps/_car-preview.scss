@@ -48,6 +48,9 @@
             height: 40px;
             width: 150px;
             font-size: rem(20px);
+            &:hover{
+                text-decoration: underline;
+            }
             // background-color: $clr-background;
             // color:$clr-txt;
         }

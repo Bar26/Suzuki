@@ -19,7 +19,7 @@ export function CarPreview({ car }) {
     return (
         <section className="car-preview">
             <div className="right" onClick={onChooseCar}>
-                <img className="car-img" src={car.imgs.floatImg} />
+                <img className="car-img" src={car.imgs.floatImg} alt="car" />
                 <h3 className="car-name">{car.nameEN}</h3>
             </div>
             {isOnCarsPage &&

@@ -7,7 +7,7 @@ export function SafetyIcons({ safetyIcons }) {
         <section className="safety-grid">
             {safetyIcons.map(safety =>
                 <section className="safety-icon">
-                    <img className="icon" src={safety.img} />
+                    <img className="icon" src={safety.img} alt="safety-icon" />
                     <span className="safety-title">{safety.title}</span>
                 </section>
             )}

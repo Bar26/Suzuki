@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { loadCars, setCurrCar } from '../store/CarActions'
 import { BigCards } from "../cmps/BigCards";
 import { MiniCards } from "../cmps/MiniCards";
@@ -17,6 +17,7 @@ import jimnyTech from '../assets/files/jimnyTech.pdf'
 import { HashLink as Link } from 'react-router-hash-link';
 import { SafetyIcons } from "../cmps/SafetyIcons";
 import { Loader } from "../cmps/Loader";
+import { CarActions } from "../cmps/CarActions";
 
 
 
@@ -26,7 +27,6 @@ export function CarDetails() {
     const dispatch = useDispatch()
     const safetyRefs = useRef([])
     let currImgIdx = 0
-
     const techLinks = {
         "swiftTech": swiftTech,
         "crossTech": crossTech,
@@ -34,6 +34,7 @@ export function CarDetails() {
         "ignisTech": ignisTech,
         "jimnyTech": jimnyTech
     }
+
     const catalogLinks = {
         "swiftCatalog": swiftCatalog,
         "crossCatalog": crossCatalog,
@@ -41,10 +42,36 @@ export function CarDetails() {
         "ignisCatalog": ignisCatalog
     }
 
+    const [isVisible, setIsVisible] = useState(false)
+    const carActionsRef = useRef(null)
+    const carActionsFloatRef = useRef()
+    const [isCarActionClosed, setIsCarActionClosed] = useState(false)
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1.0
+    }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(cbFunction, options)
+        if (carActionsRef.current) observer.observe(carActionsRef.current)
+
+        return () => {
+            if (carActionsRef.current) observer.unobserve(carActionsRef.current)
+        }
+    }, [carActionsRef, options])
+
+
     useEffect(() => {
         dispatch(setCurrCar(carId))
         window.scrollTo(0, 0)
     }, [])
+
+    const cbFunction = (entries) => {
+        const [entry] = entries
+        if(!isCarActionClosed) setIsVisible(entry.isIntersecting)
+    }
 
     const onNextImg = (diff) => {
         safetyRefs.current[currImgIdx].style.opacity = 0
@@ -64,29 +91,39 @@ export function CarDetails() {
         else return catalogLinks[linkName]
     }
 
+    const onCloseFloat = () => {
+        setIsCarActionClosed(true)
+        setIsVisible(true)
+    }
 
 
 
-    if (!Object.keys(currCar).length) return <Loader/>
+
+
+
+    if (!Object.keys(currCar).length) return <Loader />
     return <section className="car-details-container">
         <img className="main-img" src={currCar.imgs.mainImg} alt="suzuki" />
 
-        <section className="car-actions">
-            <div className="price-container">
+        <section ref={carActionsRef} className="car-actions-wrapper">
+            <CarActions />
+        </section>
+        {/* <section ref={carActionsRef} className="car-actions" > */}
+        {/* <div className="price-container">
                 <span className="p-one"> החל מ - </span>
                 <span className="p-two">{currCar.price} ₪</span>
                 <span className="p-three">
                     <span>תוספת אגרת רישוי  </span>
                     <span className="price">בסך {currCar.licensing} ₪ </span></span>
-            </div>
-            <div className="fund-options">
+            </div> */}
+        {/* <div className="fund-options">
                 <span>עד 100% מימון ועד 60 תשלומים</span>
-                <span>(כולל אפשרות לפרעון 50% בסוף תקופה)</span>
-                {/* <button className="go-to-fund-calc">
+                <span>(כולל אפשרות לפרעון 50% בסוף תקופה)</span> */}
+        {/* <button className="go-to-fund-calc">
                     למחשבון מימון
                 </button> */}
-            </div>
-            <div className="call-to-action-btns">
+        {/* </div> */}
+        {/* <div className="call-to-action-btns">
 
                 <a className="phone-link" href="tel://+972509225509">
                     <button className="phone-us">
@@ -103,16 +140,17 @@ export function CarDetails() {
                         <i class="fa-solid fa-pen-to-square"></i>
                         <span>לתיאום פגישה</span>
                     </button></Link>
-            </div>
 
-        </section>
+            </div> */}
+
+        {/* </section> */}
 
         <hr />
 
         <section className="info-imgs-container">
 
 
-            <section className="main-info-img">
+            <section id="location-id" className="main-info-img">
 
                 <header className="title">
                     {currCar.infoImgs.main.text.title}
@@ -120,7 +158,7 @@ export function CarDetails() {
 
                 <p className="content">{currCar.infoImgs.main.text.content}</p>
 
-                <img className="card-img" src={currCar.infoImgs.main.img} />
+                <img className="card-img" src={currCar.infoImgs.main.img} alt="car" />
 
             </section>
             <hr />
@@ -170,6 +208,15 @@ export function CarDetails() {
 
             <ContactUs />
         </div>
+
+        {!isVisible && <section ref={carActionsFloatRef} className="car-actions-float-container">
+            <CarActions isFloat="true" onCloseFloat={onCloseFloat} />
+        </section>
+        }
+
+
+
+
 
 
 

@@ -6,14 +6,15 @@ import { CarListPage } from './pages/CarListPage'
 import { CarDetails } from './pages/CarDetails'
 import { PurchaseProcess } from './pages/PurchaseProcess'
 import { ContactUsPage } from './pages/ContactUsPage'
-import { Gallery, MyGallery } from './pages/Gallery'
+import { Gallery } from './pages/Gallery'
 
 function App() {
+
 
 	return (
 		<HashRouter>
 
-			<div className="App">
+			<div  className="App">
 				<Header />
 				<main className="main">
 					<Routes>

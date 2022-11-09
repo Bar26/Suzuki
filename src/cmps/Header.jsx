@@ -1,9 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import suzukiLogo from '../assets/img/suzuki-logo.png'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { loadCars } from '../store/CarActions'
-import { carService } from '../services/carService'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 

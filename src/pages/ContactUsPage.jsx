@@ -27,13 +27,12 @@ export function ContactUsPage() {
                     </div>
                 </a>
 
-                <div>
-                    <div className="adress-opt">
+                <a  href="https://ul.waze.com/ul?place=ChIJDZLPK2tTHBUR05hvxrqCv98&ll=32.60045580%2C35.29462210&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">
+                    <div className="adress-opt" >
                         <i className="fa-solid fa-location-dot"></i>
                         <span>עפולה, רח' המלאכה 28</span>
                     </div>
-                </div>
-
+                </a>
             </setion>
 
             <ContactUs />

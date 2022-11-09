@@ -1,62 +1,60 @@
-.contact-us-container{
+.contact-us-container {
     @include flex-center;
     flex-direction: column;
     width: 100%;
-    
- 
-    .contact-us-header{
-        margin-bottom:20px;
+
+    .contact-us-header {
+        margin-bottom: 20px;
         @include flex-center;
         flex-direction: column;
-        gap:20px;
-        .contact-us-title{
+        gap: 20px;
+        .contact-us-title {
             font-size: rem(28px);
-
         }
-        .call-now{
+        .call-now {
             font-size: rem(24px);
             text-align: center;
-            .phone-link{
-                color:$clr-suzuki-blue
+            .phone-link {
+                color: $clr-suzuki-blue;
             }
         }
-
     }
-    .contact-us-form{
+    .contact-us-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 2fr;
-        gap:10px;
+        grid-template-rows: 1fr 1fr 1fr 2fr ;
+        gap: 10px;
         width: 580px;
 
-        ::placeholder{
+        ::placeholder {
             font-size: rem(18px);
         }
-  
-        .model, .message{
+
+        .model,
+        .message {
             grid-column: 1/-1;
             font-size: rem(18px);
         }
 
-        input, .model{
+        input,
+        .model {
             height: 50px;
-         
         }
 
-        .model{
-            color:#757575;
-            >*{
-            color:#757575;
-
+        .model {
+            color: #757575;
+            > * {
+                color: #757575;
             }
-
         }
 
-        input, .model, .message{
+        input,
+        .model,
+        .message {
             border: 0;
             border-radius: 3px;
             box-shadow: inset 0 0 0 2px #dfe1e6;
-            
+
             padding: 8px 12px;
 
             &:focus {
@@ -65,63 +63,68 @@
             }
         }
 
-      
-        
-     
+        .mail-validate-label {
+            grid-column: -1/1;
+            display: flex;
+            align-items: center;
+            .mail-validate {
+                height: 20px;
+                width: 20px;
+            }
+        }
 
-        .btn-submit{
-            // padding:3px 6px;
+        .btn-submit {
             width: 250px;
             height: 40px;
             font-size: rem(22px);
-            // background-color: $clr-suzuki-blue;
-            // color:white;
             @include flex-center;
             grid-column: 1/-1;
             justify-self: center;
             margin-top: 10px;
             margin-bottom: 100px;
-
-
         }
     }
 
-    .pop-up-container{
+    .pop-up-container {
         bottom: 20px;
         position: fixed;
         right: -202px;
-    
-        &.show{
+
+        &.show {
             animation: move 3s;
         }
     }
-
 }
 
 @keyframes move {
-    0%   {right: -202px;}
-    30%  {right: 70px;}
-    50% {right:70px;}
-    100% {right: -202px;}
-  }
+    0% {
+        right: -202px;
+    }
+    30% {
+        right: 70px;
+    }
+    50% {
+        right: 70px;
+    }
+    100% {
+        right: -202px;
+    }
+}
 
-  @include for-tablet-layout{
-    .contact-us-container{
-        .contact-us-form{
+@include for-tablet-layout {
+    .contact-us-container {
+        .contact-us-form {
             width: 440px;
-
         }
     }
-  }
+}
 
-  @include for-mobile-layout{
-    .contact-us-container{
-        .contact-us-form{
+@include for-mobile-layout {
+    .contact-us-container {
+        .contact-us-form {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
             width: 100%;
-
         }
     }
-  }
-
+}

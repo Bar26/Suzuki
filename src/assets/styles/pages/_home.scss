@@ -40,6 +40,10 @@
                 gap: 15px;
                 > * {
                     text-decoration: none;
+                    &:hover{
+                        text-decoration: underline white;
+                    }
+                 
 
                     > * {
                         padding: 3px 6px;
@@ -54,11 +58,15 @@
                     background-color: rgba(255, 255, 255, 0);
                     border: 1px white solid;
                     color: #ffffff;
+                   
                 }
 
                 .contact-us {
                     background-color: $clr-suzuki-blue;
                     color: white;
+                    &:hover{
+                        text-decoration: solid;
+                    }
                 }
             }
         }

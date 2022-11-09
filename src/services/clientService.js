@@ -7,7 +7,6 @@ const addClient = async (client) => {
     let isSuccess = false
     let createdAt = utilService.getFormatedDate(date)
     const clientReturned = await httpService.get(`client/${client.phone}`)
-    console.log(clientReturned);
 
     if (clientReturned) {
         clientReturned.messages.push({
@@ -24,6 +23,7 @@ const addClient = async (client) => {
             "last-name": client.lastName,
             "email": client.email,
             "phone": client.phone,
+            "user-consent":client.userConsent,
             "messages": [
                 {
                     "model": client.model,
