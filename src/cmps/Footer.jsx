@@ -6,7 +6,10 @@ export function Footer() {
     return <footer className="main-footer">
         
         <section className="general">
-            <header className="title" >סוזוקי עפולה - סוכנות רכב מורשית</header>
+            <header className="title" >
+                <span>סוזוקי עפולה - </span>
+                <span >סוכנות רכב מורשית  </span>
+            </header>
             <div className="address-container">
                 <i className="fa-solid fa-location-dot"></i>
                 <span>עפולה, רח' המלאכה 28</span>

@@ -37,7 +37,7 @@
             transform: translate(-50%);
             > * {
                 text-decoration: none;
-               
+
                 > * {
                     background-color: white;
                     display: flex;
@@ -87,6 +87,8 @@
     }
 }
 
+//MQ
+
 @include for-regular-layout {
     .contact-us-page-container {
         .contact-form-wrapper {
@@ -133,6 +135,11 @@
                             display: none;
                         }
                     }
+                }
+            }
+            .contact-us-container{
+                .contact-us-form{
+                    padding:0;
                 }
             }
         }

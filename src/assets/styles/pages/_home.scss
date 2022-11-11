@@ -40,10 +40,9 @@
                 gap: 15px;
                 > * {
                     text-decoration: none;
-                    &:hover{
+                    &:hover {
                         text-decoration: underline white;
                     }
-                 
 
                     > * {
                         padding: 3px 6px;
@@ -58,13 +57,12 @@
                     background-color: rgba(255, 255, 255, 0);
                     border: 1px white solid;
                     color: #ffffff;
-                   
                 }
 
                 .contact-us {
                     background-color: $clr-suzuki-blue;
                     color: white;
-                    &:hover{
+                    &:hover {
                         text-decoration: solid;
                     }
                 }
@@ -111,22 +109,22 @@
             display: flex;
             gap: 5px;
 
-            .pause, .play{
-                &.hide{
+            .pause,
+            .play {
+                &.hide {
                     display: none;
                 }
             }
-
         }
     }
 }
 
 //MQ
 
-@include for-big-screen{
-    .home{
-        .img-container{
-            .inner-img{
+@include for-big-screen {
+    .home {
+        .img-container {
+            .inner-img {
                 max-height: 400px;
             }
         }
@@ -185,8 +183,8 @@
 
 @include for-mobile-layout {
     .home {
-        gap:40px;
-        .title{
+        gap: 40px;
+        .title {
             margin: 0;
         }
         .img-container {
@@ -195,7 +193,6 @@
                 .call-to-action-btns {
                     > * {
                         > * {
-                            // @include flex-center;
                             width: 150px;
                             height: 30px;
                             font-size: rem(20px);

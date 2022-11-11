@@ -3,7 +3,6 @@
     padding: 0 70px 70px;
     .main-img {
         width: 100%;
-        // max-height: 470px;
         max-height: 550px;
         object-fit: cover;
     }
@@ -100,7 +99,6 @@
         > * {
             font-size: rem(24px);
             font-weight: bold;
-            // text-decoration: none;
         }
     }
 
@@ -312,17 +310,12 @@
         }
 
         .car-actions {
-            // padding-inline: 20px;
-
             .price-container {
                 .p-one {
                     font-size: rem(18px);
                 }
                 .p-two {
                     font-size: rem(28px);
-                }
-                .p-three {
-                    // font-size: rem(14px);
                 }
             }
             .fund-options {
@@ -448,11 +441,6 @@
                         margin-top: 1px;
                         span {
                             display: none;
-                        }
-                        svg {
-                            > * {
-                                // color:white;
-                            }
                         }
                     }
                 }

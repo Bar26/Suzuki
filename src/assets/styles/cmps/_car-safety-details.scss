@@ -8,74 +8,69 @@
     align-items: center;
     gap: 10px;
     height: 60px;
-
     position: absolute;
-    bottom:0;
+    bottom: 0;
     transform: translateY(100%);
 
     .safety {
         display: flex;
-        gap:3px;
+        gap: 3px;
         align-items: center;
 
         .safety-info {
             width: 25px;
             height: 25px;
             @include flex-center;
-            color:white;
-
+            color: white;
         }
     }
 
     .pollution {
         display: flex;
-        gap:3px;
+        gap: 3px;
         align-items: center;
-        .pollution-title {
-        }
+
         .pollution-info {
             width: 25px;
             height: 25px;
             @include flex-center;
-
         }
     }
-.more-info-container{
-    display: flex;
-    gap:3px;
-    .more-info {
+    .more-info-container {
+        display: flex;
+        gap: 3px;
+        .more-info {
+        }
     }
-}
-    
 }
 
 //MQ
 
-@include for-tablet-layout{
-    .safety-details{
+@include for-tablet-layout {
+    .safety-details {
         font-size: rem(18px);
     }
 }
 
-@include for-narrow-layout{
-    .safety-details{
+@include for-narrow-layout {
+    .safety-details {
         font-size: 1rem;
     }
 }
 
-@include for-mobile-layout{
-    .safety-details{
+@include for-mobile-layout {
+    .safety-details {
         height: 50px;
         font-size: rem(14px);
-        .safety{
-            .safety-info{
+        .safety {
+            .safety-info {
                 width: 20px;
                 height: 20px;
             }
         }
 
-        .pollution{
-            .pollution-info{
+        .pollution {
+            .pollution-info {
                 width: 20px;
                 height: 20px;
             }

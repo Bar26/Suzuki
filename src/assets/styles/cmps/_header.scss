@@ -68,9 +68,9 @@
         }
     }
 
-    a{
-        &:active{
-            color:blue;
+    a {
+        &:active {
+            color: blue;
         }
     }
 
@@ -82,7 +82,6 @@
         &:hover {
             text-decoration: underline $clr-suzuki-blue;
         }
-      
     }
 
     .nav-container {
@@ -103,14 +102,13 @@
             background-color: white;
             width: 100%;
 
-            a{
-                &.active{
-                    >*{
+            a {
+                &.active {
+                    > * {
                         text-decoration: underline $clr-suzuki-blue;
                     }
                 }
             }
-           
         }
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -118,6 +116,8 @@
         transform-origin: bottom;
     }
 }
+
+//MQ
 
 @include for-tablet-layout {
     .header-container {
@@ -137,7 +137,7 @@
             }
         }
         .nav-container {
-            hr{
+            hr {
                 display: none;
             }
             position: fixed;
@@ -156,16 +156,16 @@
                 padding-top: 40px;
                 > * {
                     border-bottom: solid 1px $clr-background;
-                    :hover{
-                        color:$clr-suzuki-blue;
+                    :hover {
+                        color: $clr-suzuki-blue;
                         text-decoration: none;
                     }
                 }
 
-                a{
-                    &.active{
-                        >*{
-                            color:$clr-suzuki-blue;
+                a {
+                    &.active {
+                        > * {
+                            color: $clr-suzuki-blue;
                             text-decoration: none;
                         }
                     }
@@ -175,8 +175,6 @@
             &.nav-open {
                 transform: translateX(0);
             }
-          
         }
     }
 }
-

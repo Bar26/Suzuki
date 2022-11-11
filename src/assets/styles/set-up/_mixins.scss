@@ -10,11 +10,11 @@
 	.title {
 		font-size: rem(40px);
 		font-weight: bold;
-		margin-bottom: em(20px,40px);
+		margin-bottom: em(20px, 40px);
 	}
 	.content {
 		font-size: rem(24px);
-		margin-bottom: em(25px,24px);
+		margin-bottom: em(25px, 24px);
 	}
 	.card-img {
 		width: 100%;
@@ -23,14 +23,12 @@
 		object-fit: cover;
 	}
 
-	@include for-tablet-layout(){
-		.title{
-		font-size: rem(32px);
-			
+	@include for-tablet-layout() {
+		.title {
+			font-size: rem(32px);
 		}
-		.content{
-		font-size: rem(20px);
-
+		.content {
+			font-size: rem(20px);
 		}
 	}
 }
@@ -49,12 +47,9 @@
 		object-fit: cover;
 		width: 100%;
 	}
-
-
-	
 }
 
-@mixin for-big-screen{
+@mixin for-big-screen {
 	@media (max-width: 1500px) {
 		@content;
 	}

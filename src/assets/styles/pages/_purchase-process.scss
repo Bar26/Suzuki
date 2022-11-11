@@ -5,11 +5,11 @@
     align-items: center;
     padding: 50px 350px 70px;
 
-    a{
+    a {
         text-decoration: underline $clr-suzuki-blue;
-     
-        &:active{
-            color: $clr-suzuki-blue
+
+        &:active {
+            color: $clr-suzuki-blue;
         }
     }
 
@@ -28,20 +28,19 @@
         font-size: rem(20px);
         text-align: center;
         margin-bottom: 50px;
-
     }
 
     .purchase-info-cards {
         display: flex;
         flex-direction: column;
-        gap:40px;
+        gap: 40px;
         article {
             border: 1px solid rgba(9, 30, 66, 0.1294117647);
 
             h2 {
                 padding: 8px;
                 background-color: $clr-background;
-                font-weight:unset;
+                font-weight: unset;
             }
             p {
                 padding: 8px;
@@ -51,33 +50,29 @@
     }
 }
 
-@include for-big-screen{
+@include for-big-screen {
     .purchase-process-container {
         padding: 50px 200px 70px;
     }
-    
 }
-@include for-wide-layout{
+@include for-wide-layout {
     .purchase-process-container {
         padding: 50px 150px 70px;
     }
-
 }
-@include for-regular-layout{
+@include for-regular-layout {
     .purchase-process-container {
         padding: 50px 100px 70px;
     }
 }
-@include for-tablet-layout{
+@include for-tablet-layout {
     .purchase-process-container {
         padding: 50px 50px 70px;
     }
 }
-@include for-narrow-layout{
+@include for-narrow-layout {
     .purchase-process-container {
         padding: 50px 10px 70px;
     }
 }
-@include for-mobile-layout{
 
-}

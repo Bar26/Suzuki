@@ -2,7 +2,6 @@
     display: flex;
     gap: 60px;
     padding: 30px 20px;
-    // border-left: 1px solid rgba(9, 30, 66, 0.1294117647);
 
     .right {
         width: 240px;
@@ -29,7 +28,6 @@
     .left {
         display: flex;
         flex-direction: column;
-        // gap:80px;
         justify-content: space-between;
         .price-container {
             display: flex;
@@ -48,11 +46,9 @@
             height: 40px;
             width: 150px;
             font-size: rem(20px);
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
-            // background-color: $clr-background;
-            // color:$clr-txt;
         }
     }
 }
@@ -81,7 +77,6 @@
                         font-size: rem(28px);
                     }
                 }
-
                 .left {
                     align-items: center;
                     text-align: center;

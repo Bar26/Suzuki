@@ -12,7 +12,6 @@ export function CarPreview({ car }) {
 
     const onChooseCar = async () => {
         await dispatch(setCurrCar(car._id))
-
         navigate(`/cars/${car._id}`)
     }
 
@@ -30,7 +29,7 @@ export function CarPreview({ car }) {
                         <span className="p-three">בתוספת אגרת רישוי בסך <span>{car.licensing} ₪</span></span>
 
                     </div>
-                    <button className="btn more-info">למידע נוסף</button>
+                    <button onClick={onChooseCar} className="btn more-info">למידע נוסף</button>
                 </section>}
 
         </section>

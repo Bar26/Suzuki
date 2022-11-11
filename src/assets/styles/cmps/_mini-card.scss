@@ -1,18 +1,19 @@
-.mini-cards-container{
+.mini-cards-container {
     width: 100%;
-    gap:30px;
+    gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
- 
 
-    .mini-card-container{
+    .mini-card-container {
         @include mini-card;
     }
 }
 
-@include for-tablet-layout{
-    .mini-cards-container{
+//MQ
+
+@include for-tablet-layout {
+    .mini-cards-container {
         grid-template-columns: auto;
     }
 }

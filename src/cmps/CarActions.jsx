@@ -34,7 +34,7 @@ export function CarActions({ isFloat, onCloseFloat }) {
                 </button>
             </a>
 
-            <Link className="inside-link" to="#contactId">
+            <Link className="inside-link" to="/contact-us">
                 <button className="go-to-contact-us btn">
                     <i class="fa-solid fa-pen-to-square"></i>
                     <span>לתיאום פגישה</span>

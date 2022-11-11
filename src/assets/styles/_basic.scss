@@ -1,71 +1,66 @@
-*{
+* {
     box-sizing: border-box;
     font-family: "almoni";
     color: $clr-txt;
-    text-underline-offset: 0.2rem ;
-
-
+    text-underline-offset: 0.2rem;
 }
 
-html{
+html {
     height: 100%;
 }
 
 body {
-
     height: 100%;
     margin: 0;
     color: $clr-txt;
-
-    // perspective:800px;
-    
 }
 
-.App{
+.App {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
-
 }
 
-.main{
+.main {
     position: relative;
-    flex:1;
+    flex: 1;
 }
 
 button {
     background-color: transparent;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     border: none;
     cursor: pointer;
     border-radius: 3px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     line-height: 1;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-.btn{
+.btn {
     background-color: $clr-suzuki-blue;
-    color:white;
-    padding:3px 6px;
+    color: white;
+    padding: 3px 6px;
 }
 
-
-hr{
+hr {
     margin: 0;
     background-color: rgba(9, 30, 66, 0.1294117647);
     border: 0;
     height: 1px;
     padding: 0;
     width: 100%;
-
 }

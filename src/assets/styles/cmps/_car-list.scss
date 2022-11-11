@@ -31,9 +31,11 @@
     }
 }
 
-@include for-regular-layout{
-    .car-list{
-        .car-list-content{
+//MQ
+
+@include for-regular-layout {
+    .car-list {
+        .car-list-content {
             gap: 70px;
         }
     }
@@ -41,7 +43,6 @@
 
 @include for-tablet-layout {
     .car-list {
-
         .models-header {
             font-size: rem(32px);
         }

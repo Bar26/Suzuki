@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react"
 import { useSelector } from "react-redux"
-import { carService } from "../services/carService"
 import { clientService } from '../services/clientService'
 import { PopUpMsg } from "./PopUpMsg"
 import emailjs from '@emailjs/browser';
@@ -75,7 +74,7 @@ export function ContactUs() {
             <h1 className="contact-us-title">צור קשר</h1>
             {location.pathname !== '/contact-us' && <div className="call-now"  >
                 <span >רוצים לדבר איתנו כבר עכשיו? חייגו </span>
-                <a className="phone-link" href="tel://+97246421771">04-6421771</a>
+                <a className="phone-link" href="tel://+97246421771"> 04-6421771 </a>
             </div>}
         </header>
         <form ref={formRef} onSubmit={onAddClient} onChange={handleChange} className="contact-us-form">
