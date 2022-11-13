@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export function PurchaseProcess() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return <section className="purchase-process-container">
 
         <h2 className="title">

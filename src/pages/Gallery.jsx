@@ -1,4 +1,11 @@
+import { useEffect } from "react"
+
 export function Gallery() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     return <section className="gallery-container">
         
         <img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1667174705/suzuki/%D7%92%D7%9C%D7%A8%D7%99%D7%94/33333_wom4sm.jpg" alt="suzuki-afula" />

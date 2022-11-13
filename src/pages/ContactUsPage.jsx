@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
 import { ContactUs } from '../cmps/ContactUs'
-import { Loader } from '../cmps/Loader'
 
 export function ContactUsPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return <section className="contact-us-page-container">
         <hr />
