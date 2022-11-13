@@ -58,19 +58,9 @@
 }
 @include for-mobile-layout {
     .gallery-container {
-        grid-template-rows: repeat(12, 350px);
-        .a,
-        .b,
-        .c,
-        .d,
-        .e,
-        .f,
-        .g,
-        .h,
-        .i,
-        .j,
-        .k {
-            grid-column: -1/1;
+        grid-template-rows: repeat(18, 350px);
+        > * {
+            grid-column: 1/-1 !important;
         }
     }
 }
