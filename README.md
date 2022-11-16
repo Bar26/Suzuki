@@ -6,8 +6,7 @@ Happy to introduce the new website for Suzuki Afula - [Check it our here](https:
 In this wesite you can find information about all suzuki models that are available in Suzuki Afula, details concerning the purchasing process, financing possibiities, trade-in options and more. Moreover, you can easily contact one of the representitives to help you, either via email (sent automatically after filling out a short form), Whatsapp or telephone. The website is built to answer all potiential clients needs, it is easy to navigate and highly accessible.
 you can read a bit about Suzuki [here](#about-Suzuki), or jump to the site's [Showcase](#showcase)
 
-
-
+![preview](https://res.cloudinary.com/debmbjvbh/image/upload/v1668635642/suzuki/readme/homepage_avnuek.png)
 
 ### About Suzuki
 
@@ -19,7 +18,6 @@ The technnology stack I used is MERN - MongoDB, Express, React, Node.js.
 API calls to the backend are done with REST API method.
 the App's layout was made with Sass (functions, mixins, variables).
 
-
 ### Showcase
 
 #### Homepage
@@ -27,6 +25,10 @@ the App's layout was made with Sass (functions, mixins, variables).
 The landing page, in which the user can Flip through images of the different models, see a list of all models or press one of the call to action buttons, directing them to either the current showcased model's page or to "contact us" page. At the bottom of the page is a short form enabeling the user to send an email message to Suzuki Afula.
 
 ![homepage](https://res.cloudinary.com/debmbjvbh/image/upload/v1668625292/suzuki/readme/Screenshot_2_detbl5.png)
+
+
+
+
 
 #### Models page
 
