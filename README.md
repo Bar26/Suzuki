@@ -24,9 +24,9 @@ the App's layout was made with Sass (functions, mixins, variables).
 
 #### Homepage
 
-The landing page, in which the user can Flip through images of the different models, see a list of all models or press one of the call to action buttons, directing them to either the current showcased model page or to "contact us" page. At the bottom of the page is a short form enabeling the user to send an email message to Suzuki Afula.
+The landing page, in which the user can Flip through images of the different models, see a list of all models or press one of the call to action buttons, directing them to either the current showcased model's page or to "contact us" page. At the bottom of the page is a short form enabeling the user to send an email message to Suzuki Afula.
 
-![homepage](https://res.cloudinary.com/debmbjvbh/image/upload/v1661780014/homepage_qddzgw.png)
+![homepage](https://res.cloudinary.com/debmbjvbh/image/upload/v1668625292/suzuki/readme/Screenshot_2_detbl5.png)
 
 #### Models page
 
