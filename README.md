@@ -26,10 +26,6 @@ The landing page, in which the user can Flip through images of the different mod
 
 ![homepage](https://res.cloudinary.com/debmbjvbh/image/upload/v1668625292/suzuki/readme/Screenshot_2_detbl5.png)
 
-
-
-
-
 #### Models page
 
 This page contains a list of previews of all models avalabile, each one when clicked redirects the user to the chosen car's page. Also, a video displaying all the models. 
@@ -44,17 +40,17 @@ This page contains a list of previews of all models avalabile, each one when cli
 Each car has an informative page, containing text, images and videos. when the user scrolls down, a concise section of information appears at the bottom of the page, "floating" conssistently in a fixed position. (containing assential information about the car, a link to "contact us" page, and a clickable button to call Suzuki Afula). At the bottom of the page is a short form enabeling the user to send an email message to Suzuki Afula.
 
 <div style="display:flex; flexDirection:column">
-<div style="display:flex>
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625301/suzuki/readme/%D7%A2%D7%9E%D7%95%D7%93_%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_1_iz8zob.png" alt="Vitara-carDetails" width="19%" title="Vitara-carDetails"   />
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625265/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_3_vceqgc.png" alt="Vitara-carDetails" width="19%" title="Vitara-carDetails" />
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625256/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_2_yftdpp.png" alt="Vitara-carDetails" width="19%" title="Vitara-carDetails" />
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625265/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_6_gpqqwq.png" alt="Vitara-carDetails" width="19%" title="Vitara-carDetails" />
-</div>
+  <div style="display:flex>
+  <img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625301/suzuki/readme/%D7%A2%D7%9E%D7%95%D7%93_%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_1_iz8zob.png"   alt="Vitara-carDetails" width="24%" title="Vitara-carDetails"   />
+  <img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625265/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_3_vceqgc.png" alt="Vitara-carDetails"    width="24%" title="Vitara-carDetails" />
+  <img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625256/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_2_yftdpp.png" alt="Vitara-carDetails"  width="24%" title="Vitara-carDetails" />
+  <img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625265/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_6_gpqqwq.png" alt="Vitara-carDetails" width="24%" title="Vitara-carDetails" />
+  </div>
 
 <div style="display:flex>
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625259/suzuki/readme/%D7%92%D7%99%D7%9E%D7%A0%D7%992_z6zxvx.png" alt="Vitara-carDetails" width="30%" title="Jimny-carDetails"   />
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625275/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_%D7%92%D7%99%D7%9E%D7%A0%D7%99_1_yz516y.png" alt="Jimny-carDetails" width="30%" title="Jimny-carDetails" />
-<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625267/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_%D7%92%D7%99%D7%9E%D7%A0%D7%99_3_brnklc.png" alt="Jimny-carDetails" width="30%" title="Jimny-carDetails" />
+<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625259/suzuki/readme/%D7%92%D7%99%D7%9E%D7%A0%D7%992_z6zxvx.png" alt="Vitara-carDetails" width="32%" title="Jimny-carDetails"   />
+<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625275/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_%D7%92%D7%99%D7%9E%D7%A0%D7%99_1_yz516y.png" alt="Jimny-carDetails" width="32%" title="Jimny-carDetails" />
+<img src="https://res.cloudinary.com/debmbjvbh/image/upload/v1668625267/suzuki/readme/%D7%9E%D7%9B%D7%95%D7%A0%D7%99%D7%AA_%D7%92%D7%99%D7%9E%D7%A0%D7%99_3_brnklc.png" alt="Jimny-carDetails" width="32%" title="Jimny-carDetails" />
 </div>
 </div>
 
