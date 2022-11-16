@@ -43,6 +43,12 @@
                 height: 20px;
             }
         }
+
+        &.social-media{
+            >*{
+                justify-content: center;
+            }
+        }
     }
 
     .phone-link-footer,

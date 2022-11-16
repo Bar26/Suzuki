@@ -4,7 +4,7 @@ export function Footer() {
 
 
     return <footer className="main-footer">
-        
+
         <section className="general">
             <header className="title" >
                 <span>סוזוקי עפולה - </span>
@@ -46,9 +46,13 @@ export function Footer() {
         <section className="social-media">
             <img className="main-logo-footer" src={suzukiLogo} alt="suzuki-logo" />
             <div className='icon-container'>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-google"></i>
+                {/* <i class="fa-brands fa-instagram"></i> */}
+                <a href="https://www.facebook.com/afulasuzuki" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.google.com/search?q=%D7%A1%D7%95%D7%96%D7%95%D7%A7%D7%99%20%D7%A2%D7%A4%D7%95%D7%9C%D7%94&oq=%D7%A1%D7%95%D7%96%D7%95%D7%A7%D7%99+%D7%A2%D7%A4%D7%95%D7%9C%D7%94+&aqs=chrome..69i57j0i512l3j0i15i22i30l2j69i65j69i61.3067j0j7&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=ALiCzsY4zcXCdDJsRtEpAiknxnH1xHRvdQ:1668616819538&rflfq=1&num=10&rldimm=6015298515628119498&lqi=ChfXodeV15bXlden15kg16LXpNeV15zXlCIDiAEBWiEiF9eh15XXlteV16fXmSDXotek15XXnNeUKgYIAhAAEAGSAQpjYXJfZGVhbGVy&ved=2ahUKEwihsa2GkrP7AhUChf0HHef9CooQvS56BAgTEAE&sa=X&rlst=f#rlfi=hd:;si:6015298515628119498,l,ChfXodeV15bXlden15kg16LXpNeV15zXlCIDiAEBWiEiF9eh15XXlteV16fXmSDXotek15XXnNeUKgYIAhAAEAGSAQpjYXJfZGVhbGVy;mv:[[32.6047325,35.2965571],[32.6002438,35.2944236]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4" target="_blank">
+                    <i class="fa-brands fa-google"></i>
+                </a>
             </div>
 
         </section>
