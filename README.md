@@ -6,7 +6,7 @@ Happy to introduce the new website for Suzuki Afula - [Check it our here](https:
 In this wesite you can find information about all suzuki models that are available in Suzuki Afula, details concerning the purchasing process, financing possibiities, trade-in options and more. Moreover, you can easily contact one of the representitives to help you, either via email (sent automatically after filling out a short form), Whatsapp or telephone. The website is built to answer all potiential clients needs, it is easy to navigate and highly accessible.
 you can read a bit about Suzuki [here](#about-Suzuki), or jump to the site's [Showcase](#showcase)
 
-<video src="https://res.cloudinary.com/debmbjvbh/video/upload/v1668625875/suzuki/readme/suzuki-video_bs6nnw.mp4"/>
+
 
 
 ### About Suzuki
